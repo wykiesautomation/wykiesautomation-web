@@ -1,0 +1,19 @@
+/* Styles */
+:root{ --blue:#1E73BE; --bg:#0b0f14; --card:#121720; }
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;color:#eef;background:var(--bg)}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;border-bottom:1px solid #1b2230;background:#0e131a}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{height:36px}
+.brand-text h1{margin:0;font-size:1.25rem}
+.brand-text .tagline{display:block;color:#aac;font-size:.85rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;padding:24px}
+.card{background:var(--card);border:1px solid #1b2230;border-radius:12px;padding:18px;display:flex;flex-direction:column}
+.card h3{margin:0 0 8px 0;color:#fff}
+.card .desc{color:#cbd;min-height:64px}
+.price{font-weight:700;color:#fff;margin:8px 0}
+.buy-btn{padding:10px 14px;border-radius:10px;border:none;background:var(--blue);color:white;font-weight:600;cursor:pointer;display:inline-block;text-align:center;margin-bottom:6px}
+.buy-btn:hover{filter:brightness(1.1)}
+.buy-btn.secondary{background:#10b981}
+.whatsapp-btn{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:12px 18px;border-radius:50px;font-weight:bold;text-decoration:none;box-shadow:0 4px 6px rgba(0,0,0,0.2);font-size:14px;z-index:999;transition:background .3s ease}
+.whatsapp-btn:hover{background:#1ebe5d}
