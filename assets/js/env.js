@@ -1,0 +1,6 @@
+
+window.__env = {
+  SHEET_API_URL: '',
+  ADMIN_PASSPHRASE: '',
+  WHATSAPP_NUMBER_INTL: '27716816131'
+};

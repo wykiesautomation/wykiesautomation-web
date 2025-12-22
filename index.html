@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wykies Automation — Products</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="assets/img/logo-blue.png" alt="Wykies Automation" />
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Wykies Automation — Live Products</h1>
+      <p>Explore our catalog and buy securely via PayFast. VAT-inclusive pricing.</p>
+    </section>
+    <section id="products" class="products-grid" aria-label="Product Catalog"></section>
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <div class="grid">
+          <label>Name<input name="name" required/></label>
+          <label>Email<input type="email" name="email" required/></label>
+          <label>Phone<input name="phone"/></label>
+          <label>Product<select name="product" id="product-select"></select></label>
+        </div>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <div class="row">
+          <label><input type="checkbox" name="copy_me"/> Copy me</label>
+          <label><input type="checkbox" name="whatsapp_optin"/> WhatsApp contact</label>
+        </div>
+        <button type="submit">Send</button>
+        <a class="whatsapp-btn" id="whatsapp-link" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>© 2025 Wykies Automation. All rights reserved.</p>
+    <p><a href="mailto:wykiesautomation@gmail.com">Email us</a> · <a id="whatsapp-footer" target="_blank" rel="noopener">WhatsApp</a></p>
+  </footer>
+</body>
+</html>
