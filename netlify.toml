@@ -1,0 +1,10 @@
+
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+# Required env vars (Site Settings → Environment)
+# APPS_SCRIPT_URL, IS_SANDBOX, PF_MERCHANT_ID, PF_MERCHANT_KEY, PF_PASSPHRASE, ADMIN_EMAIL

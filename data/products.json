@@ -1,0 +1,98 @@
+[
+  {
+    "sku": "WA-01",
+    "name": "3D Printer Control V1",
+    "price": "R1,499",
+    "amount": 1499.0,
+    "image": "assets/img/products/WA-01.png",
+    "description": "Full-featured desktop control for common FDM printers. ESP32-based controller support."
+  },
+  {
+    "sku": "WA-02",
+    "name": "Plasma Cutter Control V1",
+    "price": "R2,499",
+    "amount": 2499.0,
+    "image": "assets/img/products/WA-02.png",
+    "description": "PyQt5 GUI + motion planning hooks, DXF/SVG import and kerf compensation."
+  },
+  {
+    "sku": "WA-03",
+    "name": "ECU/TCU Control System V1",
+    "price": "R6,499",
+    "amount": 6499.0,
+    "image": "assets/img/products/WA-03.png",
+    "description": "Modern ECU/TCU GUI with sensor suite, profiles and logging."
+  },
+  {
+    "sku": "WA-04",
+    "name": "Fridge/Freezer Control V1",
+    "price": "R899",
+    "amount": 899.0,
+    "image": "assets/img/products/WA-04.png",
+    "description": "Temperature and defrost control with alerts and energy optimization."
+  },
+  {
+    "sku": "WA-05",
+    "name": "Nano GSM Gate Controller V1",
+    "price": "R800",
+    "amount": 800.0,
+    "image": "assets/img/products/WA-05.png",
+    "description": "Arduino Nano GSM gate open/close with number whitelist and modes."
+  },
+  {
+    "sku": "WA-06",
+    "name": "Solar Energy Management System V1",
+    "price": "R3,999",
+    "amount": 3999.0,
+    "image": "assets/img/products/WA-06.png",
+    "description": "PV, battery and load management with dashboards and alerts."
+  },
+  {
+    "sku": "WA-07",
+    "name": "Hybrid Gate Controller V1",
+    "price": "R1,800",
+    "amount": 1800.0,
+    "image": "assets/img/products/WA-07.png",
+    "description": "ESP32 + H-Bridge modules, Wi\u2011Fi primary with GSM fallback."
+  },
+  {
+    "sku": "WA-08",
+    "name": "Smart Battery Charger V1",
+    "price": "R999",
+    "amount": 999.0,
+    "image": "assets/img/products/WA-08.png",
+    "description": "12V multi-stage charger with LCD and safety protections."
+  },
+  {
+    "sku": "WA-09",
+    "name": "Gate/Garage Controller V1",
+    "price": "R1,009",
+    "amount": 1009.0,
+    "image": "assets/img/products/WA-09.png",
+    "description": "Compact Wi\u2011Fi/Bluetooth gate/garage opener module."
+  },
+  {
+    "sku": "WA-10",
+    "name": "12CH Hybrid Alarm V1",
+    "price": "R1,299",
+    "amount": 1299.0,
+    "image": "assets/img/products/WA-10.png",
+    "description": "12\u2011channel hybrid Wi\u2011Fi+GSM alarm with profile modes and panic."
+  },
+  {
+    "sku": "WA-11",
+    "name": "16CH Hybrid Alarm V1",
+    "price": "R5,499",
+    "amount": 5499.0,
+    "image": "assets/img/products/WA-11.png",
+    "description": "16\u2011channel hybrid alarm with signal polling and advanced logging."
+  },
+  {
+    "sku": "WA-12",
+    "name": "TCU Gearbox Controller V1",
+    "price": "R4,500",
+    "amount": 4500.0,
+    "image": "assets/img/products/WA-12.png",
+    "description": "TCU controller for legacy 4\u2011speed with safety and reverse lockout."
+  }
+]
