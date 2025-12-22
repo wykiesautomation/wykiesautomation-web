@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>16CH Hybrid Alarm V1 — Wykies Automation</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <style>.imgph{width:100%;height:240px;border-radius:12px;background:#0d1520;color:#64748b;display:flex;align-items:center;justify-content:center}</style>
+</head>
+<body>
+  <header>
+    <div class="brand"><img src="../assets/img/logo.png" alt="Wykies Automation"><span class="badge">LIVE</span></div>
+    <nav><a href="../">Home</a><a href="../gallery.html">Gallery</a><a href="../contact.html">Contact</a></nav>
+  </header>
+  <main class="container">
+    <h1>16CH Hybrid Alarm V1</h1>
+    <section class="product">
+      <div class="card">
+        <img class="gallery-item" src="../assets/img/products/WA-11.png" alt="16CH Hybrid Alarm V1">
+        <div class="badge">WA-11</div>
+        <h3>16CH Hybrid Alarm V1</h3>
+        <p class="price">R5,499</p>
+        <p class="muted">VAT-inclusive pricing.</p>
+        <p>16‑channel hybrid alarm with signal polling and advanced logging.</p>
+      </div>
+      <div class="card">
+        <h3>Checkout</h3>
+        <p class="muted">Please enter your details for the invoice.</p>
+        <form id="pf" action="https://www.payfast.co.za/eng/process" method="post">
+          <input type="hidden" name="merchant_id"  value="32913011">
+          <input type="hidden" name="merchant_key" value="8wd7iwcgippud">
+          <input type="hidden" name="amount"    value="5499.00">
+          <input type="hidden" name="item_name" value="16CH Hybrid Alarm V1">
+          <input type="hidden" name="return_url" value="https://wykiesautomation.co.za/thank-you.html">
+          <input type="hidden" name="cancel_url" value="https://wykiesautomation.co.za/cancel.html">
+          <input type="hidden" name="notify_url" value="https://script.google.com/macros/s/AKfycbxRxrjMnoQlPI3nFZFeRS4yoUExGw1_cxWZIfQAoS8HJf3QCTH9Hk6FdqqNkETpWXPa0g/exec">
+          <label for="first">First name</label><input id="first" name="name_first" required>
+          <label for="last">Last name</label><input id="last" name="name_last" required>
+          <label for="email">Email</label><input id="email" name="email_address" type="email" required>
+          <label for="phone">Phone</label><input id="phone" name="cell_number">
+          <div style="margin-top:12px;display:flex;gap:10px"><button class="btn" type="submit">Pay Now</button><a class="btn ghost" href="../cancel.html">Cancel</a></div>
+          <p class="muted">You’ll be redirected to PayFast to complete your payment.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>© 2025 Wykies Automation. All rights reserved.</footer>
+</body>
+</html>
