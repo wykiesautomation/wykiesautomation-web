@@ -1,0 +1,13 @@
+
+<h3>Add New Product</h3>
+<div class=grid style='grid-template-columns:1fr 1fr'>
+  <input id='nSku' placeholder='SKU (e.g., WA-13)' required>
+  <input id='nName' placeholder='Product Name' required>
+  <input id='nPrice' placeholder='Price (e.g., R2,999)' required>
+  <input id='nImage' placeholder='Image URL (or assets/img/wa-13.png)' required>
+  <input id='nTrial' placeholder='Trial URL (optional)'>
+  <textarea id='nDesc' placeholder='Description' style='grid-column:1/-1;height:120px'></textarea>
+  <button class='btn' onclick='addProduct()'>Add Product</button>
+</div>
+<p id='addStatus' class='badge'></p>
+<h3>Products</h3>

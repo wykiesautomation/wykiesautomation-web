@@ -1,0 +1,10 @@
+[
+  {
+    "sku": "WA-01",
+    "name": "3D Printer Control V1",
+    "price": "R1,499",
+    "image": "assets/img/wa-01.png",
+    "description": "Modern 3D printer control UI with ESP32 logic and desktop app.",
+    "trial_url": "#"
+  }
+]
