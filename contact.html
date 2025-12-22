@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — Wykies Automation</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+<script defer src="assets/js/contact.js"></script>
+</head><body>
+<header>
+  <div class="brand"><img src="assets/img/logo_blue.png" alt="Wykies Automation"><span class="badge">LIVE</span></div>
+  <nav>
+    <a href="/">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<div class="container">
+  <h1>Contact</h1>
+  <form id="contactForm" class="card">
+    <label>Name<input name="name" required></label>
+    <label>Email<input name="email" type="email" required></label>
+    <label>Phone<input name="phone"></label>
+    <label>Product<select name="product" id="productSelect"></select></label>
+    <label>Message<textarea name="message" rows="4" required></textarea></label>
+    <label><input type="checkbox" name="copy" checked> Copy me</label>
+    <label><input type="checkbox" name="whatsapp"> WhatsApp opt-in</label>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn" type="submit">Send</button>
+      <a id="whatsappLink" class="btn ghost" target="_blank" rel="noopener">Open WhatsApp</a>
+    </div>
+  </form>
+  <div id="status"></div>
+</div>
+<footer>© 2025 Wykies Automation. All rights reserved.</footer>
+</body></html>
