@@ -1,0 +1,35 @@
+/* Minimal modern styles */
+:root { --bg:#0b0e13; --surface:#121824; --muted:#9fb3c8; --text:#e6edf3; --primary:#0d47a1; --primary-2:#1565c0; --ok:#1db954; --warn:#ffb300; --err:#ff5252; }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Ubuntu,"Noto Sans",sans-serif}
+.container{max-width:1100px;margin:2rem auto;padding:0 1rem}
+.site-header,.site-footer{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem;background:linear-gradient(90deg,var(--surface),#0c1525)}
+.site-header .brand{display:flex;gap:.6rem;align-items:center;color:var(--text);text-decoration:none}
+.site-header img{height:28px}
+.site-header nav a{color:var(--muted);text-decoration:none;margin-left:1rem}
+.site-header nav a:hover{color:var(--text)}
+.site-footer a{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--surface);border:1px solid #1d2940;border-radius:10px;padding:1rem}
+.card-img img{width:100%;border-radius:8px;display:block}
+.card .caption{padding-top:.5rem;color:var(--muted);font-size:.9rem}
+.muted{color:var(--muted)}
+.error{color:var(--err)}
+.status{min-height:1.4rem;color:var(--muted)}
+.btn{appearance:none;border:1px solid #2a3c5f;background:transparent;color:var(--text);padding:.6rem .9rem;border-radius:8px;cursor:pointer}
+.btn:hover{border-color:#3b568a}
+.btn.primary{background:linear-gradient(180deg,var(--primary),var(--primary-2));border-color:#0f3d8e}
+.btn.outline{background:transparent}
+.table-wrap{overflow:auto}
+#products-table{width:100%;border-collapse:collapse}
+#products-table th,#products-table td{border-bottom:1px solid #1d2940;padding:.4rem .5rem;text-align:left}
+.product-hero{display:grid;grid-template-columns:320px 1fr;gap:1rem}
+.product-hero img{width:100%;border-radius:10px;border:1px solid #1d2940;background:#0b0e13}
+.price{font-size:1.4rem}
+.prose{line-height:1.7}
+.hidden{display:none}
+input,select,textarea{width:100%;padding:.6rem .7rem;border-radius:8px;border:1px solid #1d2940;background:#0e1626;color:var(--text)}
+.inline{display:flex;align-items:center;gap:.5rem}
+.form textarea{min-height:120px}
+@media (max-width:820px){.product-hero{grid-template-columns:1fr}}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wykies Automation</title>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#0d47a1" />
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/">
+    <img src="/assets/img/logo.svg" alt="Wykies Automation" />
+    <span>Wykies Automation</span>
+  </a>
+  <nav>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/contact.html">Contact</a>
+    <a class="admin-link" href="/admin.html" title="Admin">Admin</a>
+  </nav>
+</header>
+<main class="container">
+
+<section>
+  <h1>Gallery</h1>
+  <div id="gallery-grid" class="grid"></div>
+</section>
+<script>
+  (async () => {
+    const { api } = await window.__ensureApi();
+    try {
+      const data = await api.get('gallery');
+      const grid = document.getElementById('gallery-grid');
+      grid.innerHTML = '';
+      data.forEach(item => {
+        const card = document.createElement('a');
+        card.className = 'card card-img';
+        card.href = item.sku ? `/product.html?sku=${encodeURIComponent(item.sku)}` : '#';
+        card.innerHTML = `<img loading="lazy" src="${item.url}" alt="${item.title || ''}"><div class="caption">${item.title || ''}</div>`;
+        grid.appendChild(card);
+      });
+    } catch (e) {
+      document.getElementById('gallery-grid').innerHTML = `<p class="error">Failed to load gallery. ${e}</p>`;
+    }
+  })();
+</script>
+</main>
+<footer class="site-footer">
+  <div>© 2025 Wykies Automation. All rights reserved.</div>
+  <div>
+    <a href="mailto:wykiesautomation@gmail.com">Email</a>
+    <span>·</span>
+    <a target="_blank" rel="noopener" href="https://wa.me/27716816131">WhatsApp</a>
+  </div>
+</footer>
+<script src="/assets/js/api.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html><body style="font-family:Segoe UI,Arial,sans-serif;">
+  <h2>Wykies Automation — Tax Invoice</h2>
+  <p><b>Date:</b> <?= new Date(data.now).toLocaleString() ?><br/>
+     <b>Invoice #:</b> <?= data.itn.pf_payment_id || ('WA-'+data.sku) ?>
+  </p>
+  <hr>
+  <p>
+    <b>Item:</b> <?= (data.product && data.product.name) || data.sku ?><br/>
+    <b>SKU:</b> <?= data.sku ?><br/>
+    <b>Amount (ZAR):</b> R<?= data.amount ?>
+  </p>
+  <p>
+    <b>Buyer:</b> <?= (data.itn.name_first||'') + ' ' + (data.itn.name_last||'') ?> &lt;<?= data.itn.email_address||'' ?>&gt;
+  </p>
+  <hr>
+  <small>Thank you for your business. This is a system-generated invoice.</small>
+</body></html>

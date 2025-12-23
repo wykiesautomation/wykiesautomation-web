@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wykies Automation</title>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#0d47a1" />
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/">
+    <img src="/assets/img/logo.svg" alt="Wykies Automation" />
+    <span>Wykies Automation</span>
+  </a>
+  <nav>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/contact.html">Contact</a>
+    <a class="admin-link" href="/admin.html" title="Admin">Admin</a>
+  </nav>
+</header>
+<main class="container">
+
+<section>
+  <h1>Admin Panel</h1>
+  <div id="login-box" class="card">
+    <h3>Sign in</h3>
+    <p class="muted">Enter your admin passphrase to continue.</p>
+    <input id="passphrase" type="password" placeholder="Passphrase" />
+    <button id="login-btn" class="btn primary">Login</button>
+    <p id="login-status" class="status"></p>
+  </div>
+
+  <div id="admin-ui" class="hidden">
+    <div class="toolbar">
+      <button id="refresh-btn" class="btn">Refresh</button>
+      <button id="logout-btn" class="btn outline">Logout</button>
+    </div>
+    <h3>Products</h3>
+    <div class="table-wrap">
+      <table id="products-table">
+        <thead>
+          <tr><th>SKU</th><th>Name</th><th>Price (R)</th><th>Image URL</th><th>Trial URL</th><th>Enabled</th><th></th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <h3>Gallery</h3>
+    <div id="gallery-admin" class="card">
+      <input id="g-img-url" placeholder="Image URL" />
+      <input id="g-title" placeholder="Title" />
+      <input id="g-sku" placeholder="SKU (optional)" />
+      <button id="g-add" class="btn">Add Image</button>
+      <p id="g-status" class="status"></p>
+    </div>
+  </div>
+</section>
+<script src="/assets/js/admin.js"></script>
+</main>
+<footer class="site-footer">
+  <div>© 2025 Wykies Automation. All rights reserved.</div>
+  <div>
+    <a href="mailto:wykiesautomation@gmail.com">Email</a>
+    <span>·</span>
+    <a target="_blank" rel="noopener" href="https://wa.me/27716816131">WhatsApp</a>
+  </div>
+</footer>
+<script src="/assets/js/api.js"></script>
+</body>
+</html>
