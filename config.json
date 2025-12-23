@@ -1,12 +1,12 @@
 {
-  "appsScriptUrl": "https://script.google.com/macros/s/REPLACE_WITH_WEB_APP_URL/exec",
+  "appsScriptUrl": "https://script.google.com/macros/s/AKfycbxzhbSIPoZzApn5SsLwHCVF2meeO8jwi4RLqpzPvasZMfYj0kFK2ub3KbIVXfXt5Ves/exec",
   "payfast": {
     "env": "live",
     "merchant_id": "32913011",
     "merchant_key": "8wd7iwcgippud",
     "return_url": "https://wykiesautomation.co.za/success.html",
     "cancel_url": "https://wykiesautomation.co.za/cancel.html",
-    "notify_url": "https://script.google.com/macros/s/REPLACE_WITH_WEB_APP_URL/exec?action=itn"
+    "notify_url": "https://script.google.com/macros/s/AKfycbxzhbSIPoZzApn5SsLwHCVF2meeO8jwi4RLqpzPvasZMfYj0kFK2ub3KbIVXfXt5Ves/exec?action=itn"
   },
   "contact": {
     "admin_email": "wykiesautomation@gmail.com",
