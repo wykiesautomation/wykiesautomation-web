@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin — Wykies Automation</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+<header>
+  <div class="wrap logo">
+    <img src="./assets/img/logo-blue.svg" alt="Wykies Automation">
+    <span class="h1">Wykies Automation — Admin</span>
+  </div>
+  <div class="wrap"><nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="admin.html">Admin</a>
+  </nav></div>
+</header>
+<main>
+  <div class="wrap">
+    <h3>Login</h3>
+    <div class="grid" style="grid-template-columns:1fr auto;align-items:center;">
+      <input id="passphrase" class="input" placeholder="Passphrase">
+      <button id="login-btn" class="btn primary">Login</button>
+    </div>
+
+    <h3>Products</h3>
+    <table class="table">
+      <thead><tr><th>SKU</th><th>Name</th><th>Price</th><th>Image URL</th><th>Trial URL</th><th>Doc URL</th><th>Active</th><th>Save</th></tr></thead>
+      <tbody id="prod-rows"></tbody>
+    </table>
+
+    <h3>Gallery</h3>
+    <div class="grid" style="grid-template-columns:1fr 1fr auto;align-items:end;">
+      <label>Image URL<br><input id="g-url" class="input" placeholder="https://..."></label>
+      <label>Caption<br><input id="g-cap" class="input" placeholder="Caption"></label>
+      <button id="g-add-btn" class="btn">Add Image</button>
+    </div>
+
+    <h3>Payments</h3>
+    <table class="table">
+      <thead><tr><th>Timestamp</th><th>InvoiceNo</th><th>OrderID</th><th>pf_payment_id</th><th>Email</th><th>SKU</th><th>TotalInclVAT</th><th>Resend</th></tr></thead>
+      <tbody id="pay-rows"></tbody>
+    </table>
+  </div>
+</main>
+<footer>
+  <div class="wrap">© 2025 Wykies Automation • VAT included • Contact: <a href="mailto:wykiesautomation@gmail.com">wykiesautomation@gmail.com</a> • WhatsApp: <a id="wa-foot" target="_blank">Chat</a></div>
+</footer>
+<script type="module" src="./assets/js/admin.js"></script>
+</body>
+</html>

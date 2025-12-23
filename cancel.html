@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment Cancelled — Wykies Automation</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+<header>
+  <div class="wrap logo">
+    <img src="./assets/img/logo-blue.svg" alt="Wykies Automation">
+    <span class="h1">Wykies Automation — Payment Cancelled</span>
+  </div>
+  <div class="wrap"><nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="admin.html">Admin</a>
+  </nav></div>
+</header>
+<main>
+  <div class="wrap">
+    <h2>Payment cancelled</h2>
+    <p>No worries — your cart is intact. You can try again anytime.</p>
+    <div class="btn-row"><a class="btn primary" href="index.html">Return to catalog</a></div>
+  </div>
+</main>
+<footer>
+  <div class="wrap">© 2025 Wykies Automation • VAT included • Contact: <a href="mailto:wykiesautomation@gmail.com">wykiesautomation@gmail.com</a> • WhatsApp: <a id="wa-foot" target="_blank">Chat</a></div>
+</footer>
+<script type="module">
+  import { CFG, initNav } from './assets/js/cms.js';
+  import { qs } from './assets/js/ui.js';
+  async function render(){ await initNav(); qs('#wa-foot').href = `https://wa.me/${CFG.contact.whatsapp_number}`; }
+  render();
+</script>
+</body>
+</html>

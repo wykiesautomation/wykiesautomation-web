@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery — Wykies Automation</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+<header>
+  <div class="wrap logo">
+    <img src="./assets/img/logo-blue.svg" alt="Wykies Automation">
+    <span class="h1">Wykies Automation — Gallery</span>
+  </div>
+  <div class="wrap"><nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="admin.html">Admin</a>
+  </nav></div>
+</header>
+<main>
+  <div class="wrap">
+    <div id="gallery-grid" class="grid"></div>
+  </div>
+</main>
+<footer>
+  <div class="wrap">© 2025 Wykies Automation • VAT included • Contact: <a href="mailto:wykiesautomation@gmail.com">wykiesautomation@gmail.com</a> • WhatsApp: <a id="wa-foot" target="_blank">Chat</a></div>
+</footer>
+<script type="module">
+  import { qs } from './assets/js/ui.js';
+  import { CFG, fetchGallery, initNav } from './assets/js/cms.js';
+  async function render(){
+    await initNav();
+    const items = await fetchGallery();
+    const grid = qs('#gallery-grid'); grid.innerHTML='';
+    items.filter(i=>i.active).forEach(i=>{
+      const fig = document.createElement('figure'); fig.className='card';
+      fig.innerHTML = `<img loading="lazy" src="${i.url}" alt="${i.caption}"><figcaption class="pad">${i.caption||''}</figcaption>`;
+      grid.appendChild(fig);
+    });
+    qs('#wa-foot').href = `https://wa.me/${CFG.contact.whatsapp_number}`;
+  }
+  render();
+</script>
+</body>
+</html>

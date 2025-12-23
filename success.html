@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment Success — Wykies Automation</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+<header>
+  <div class="wrap logo">
+    <img src="./assets/img/logo-blue.svg" alt="Wykies Automation">
+    <span class="h1">Wykies Automation — Payment Success</span>
+  </div>
+  <div class="wrap"><nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="admin.html">Admin</a>
+  </nav></div>
+</header>
+<main>
+  <div class="wrap">
+    <h2>Thank you!</h2>
+    <p>Your payment has been received. A tax invoice and download links have been emailed to you.</p>
+    <div id="order" class="card"><div class="pad"></div></div>
+  </div>
+</main>
+<footer>
+  <div class="wrap">© 2025 Wykies Automation • VAT included • Contact: <a href="mailto:wykiesautomation@gmail.com">wykiesautomation@gmail.com</a> • WhatsApp: <a id="wa-foot" target="_blank">Chat</a></div>
+</footer>
+<script type="module">
+  import { qs, store } from './assets/js/ui.js';
+  import { CFG, initNav } from './assets/js/cms.js';
+  async function render(){
+    await initNav();
+    const o = store.get('wa_order');
+    const pad = qs('#order .pad');
+    if(o){ pad.innerHTML = `<p><strong>Order ID:</strong> ${o.orderId}<br><strong>SKU:</strong> ${o.sku}<br><strong>Amount:</strong> R${Number(o.amount).toFixed(2)}<br><strong>Email:</strong> ${o.buyerEmail||'(not provided)'}</p>`; }
+    qs('#wa-foot').href = `https://wa.me/${CFG.contact.whatsapp_number}`;
+    store.del('wa_order');
+  }
+  render();
+</script>
+</body>
+</html>
