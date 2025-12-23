@@ -1,0 +1,179 @@
+{
+  "products": [
+    {
+      "sku": "WA-01",
+      "name": "3D Printer Control V1",
+      "price": 1499.0,
+      "summary": "Desktop app + ESP32 firmware for basic printer controls.",
+      "description": "Modern control UI with jog, temperature, and job monitor.",
+      "imageUrl": "assets/img/wa01.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-02",
+      "name": "Plasma Cutter Control V1",
+      "price": 2499.0,
+      "summary": "PyQt GUI with DXF/SVG import and kerf compensation.",
+      "description": "Plasma cutting control with material DB and sensor feedback.",
+      "imageUrl": "assets/img/wa02.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-03",
+      "name": "ECU/TCU Control System V1",
+      "price": 6499.0,
+      "summary": "Engine & gearbox control UI with profiles and logging.",
+      "description": "Modern & Legacy variants, gauges, calibration, logging.",
+      "imageUrl": "assets/img/wa03.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-04",
+      "name": "Fridge/Freezer Control V1",
+      "price": 899.0,
+      "summary": "Temperature control with alerts and energy optimization.",
+      "description": "Compact control system with sensor monitoring and setpoints.",
+      "imageUrl": "assets/img/wa04.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-05",
+      "name": "Nano GSM Gate Controller V1",
+      "price": 800.0,
+      "summary": "Arduino Nano GSM-based gate opener.",
+      "description": "Supports admin numbers, STATUS polling, and SMS control.",
+      "imageUrl": "assets/img/wa05.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-06",
+      "name": "Solar Energy Management System V1",
+      "price": 3999.0,
+      "summary": "Solar PV monitoring and automated load management.",
+      "description": "Dashboards, alerts, and device integration.",
+      "imageUrl": "assets/img/wa06.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-07",
+      "name": "Hybrid Gate Controller V1",
+      "price": 1800.0,
+      "summary": "Wi‑Fi primary with GSM fallback gate controller.",
+      "description": "Selectable primary, auto-fallback, signal polling.",
+      "imageUrl": "assets/img/wa07.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-08",
+      "name": "Smart Battery Charger V1",
+      "price": 999.0,
+      "summary": "Intelligent charging with health diagnostics.",
+      "description": "USB/ESP32 control, profiles, and logging.",
+      "imageUrl": "assets/img/wa08.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-10",
+      "name": "12CH Hybrid Alarm V1",
+      "price": 1299.0,
+      "summary": "Hybrid Wi‑Fi+GSM alarm with profiles.",
+      "description": "Wi‑Fi primary, GSM fallback, zone enable/disable.",
+      "imageUrl": "assets/img/wa10.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-11",
+      "name": "16CH Hybrid Alarm V1",
+      "price": 5499.0,
+      "summary": "16-channel system with advanced controls.",
+      "description": "Signal polling, dashboard, panic modes, zone triggers.",
+      "imageUrl": "assets/img/wa11.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-12",
+      "name": "TCU Gearbox Controller V1",
+      "price": 4500.0,
+      "summary": "Configurable TCU up to 10 gears.",
+      "description": "Reverse lockout, serial/CAN, profiles, firmware check.",
+      "imageUrl": "assets/img/wa12.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    }
+  ],
+  "gallery": [
+    {
+      "url": "assets/img/logo_blue.png",
+      "caption": "Wykies Automation"
+    },
+    {
+      "url": "assets/img/logo_blue.svg",
+      "caption": "Wykies Automation"
+    },
+    {
+      "url": "assets/img/wa01.png",
+      "caption": "3D Printer Control V1"
+    },
+    {
+      "url": "assets/img/wa02.png",
+      "caption": "Plasma Cutter Control V1"
+    },
+    {
+      "url": "assets/img/wa03.png",
+      "caption": "ECU/TCU Control System V1"
+    },
+    {
+      "url": "assets/img/wa04.png",
+      "caption": "Fridge/Freezer Control V1"
+    },
+    {
+      "url": "assets/img/wa05.png",
+      "caption": "Nano GSM Gate Controller V1"
+    },
+    {
+      "url": "assets/img/wa06.png",
+      "caption": "Solar Energy Management System V1"
+    },
+    {
+      "url": "assets/img/wa07.png",
+      "caption": "Hybrid Gate Controller V1"
+    },
+    {
+      "url": "assets/img/wa08.png",
+      "caption": "Smart Battery Charger V1"
+    },
+    {
+      "url": "assets/img/wa10.png",
+      "caption": "12CH Hybrid Alarm V1"
+    },
+    {
+      "url": "assets/img/wa11.png",
+      "caption": "16CH Hybrid Alarm V1"
+    },
+    {
+      "url": "assets/img/wa12.png",
+      "caption": "TCU Gearbox Controller V1"
+    }
+  ]
+}

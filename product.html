@@ -1,0 +1,19 @@
+
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Product — Wykies Automation</title>
+<link rel="stylesheet" href="assets/css/styles.css"/>
+</head><body onload="renderProduct()">
+<header class="header"><img id="brandLogo" class="logo" src="assets/img/logo_blue.png" alt="Wykies Automation logo"/>
+<nav><a href="index.html">Home</a> · <a href="gallery.html">Gallery</a></nav></header>
+<main class="container"><div class="product-hero">
+<img id="pImg" src="assets/img/placeholder.png" alt="Product image"/>
+<div><h1 id="pName">Product</h1>
+<div><span class="badge">VAT Incl.</span> <span id="pPrice" class="price">R0</span></div>
+<p id="pDesc"></p>
+<div class="btns"><a id="btnEmail" class="btn">Email</a><a id="btnWA" class="btn">WhatsApp</a><a id="btnTrial" class="btn" style="display:none">Download Trial (.exe)</a><a id="btnDoc" class="btn" style="display:none">Documentation</a></div>
+</div></div></main>
+<footer class="footer">© <span id="year"></span> Wykies Automation • VAT-inclusive pricing</footer>
+<script src="assets/js/app.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
