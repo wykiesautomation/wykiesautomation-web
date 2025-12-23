@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin — Wykies Automation</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <img src="assets/img/logo_blue.png" alt="Wykies Automation" class="logo" />
+    <h1>Admin Panel</h1>
+  </header>
+  <main>
+    <section id="login">
+      <input type="password" id="passphrase" placeholder="Passphrase" />
+      <button id="loginBtn">Login</button>
+      <div id="loginStatus" class="status"></div>
+    </section>
+    <section id="admin" class="hidden">
+      <h2>Edit Product</h2>
+      <div class="row">
+        <select id="sku"></select>
+        <input id="name" placeholder="Name" />
+        <input id="price" placeholder="Price (incl VAT)" />
+        <input id="imageUrl" placeholder="Image URL" />
+        <input id="trialUrl" placeholder="Trial URL" />
+        <input id="docUrl" placeholder="Documentation URL" />
+        <label><input type="checkbox" id="active" /> Active</label>
+        <button id="saveBtn">Save</button>
+      </div>
+      <h2>Gallery</h2>
+      <div class="row">
+        <select id="gsku"></select>
+        <input id="gimage" placeholder="Image URL" />
+        <button id="addImageBtn">Add Image</button>
+      </div>
+      <h2>Payments</h2>
+      <div id="payments"></div>
+      <button id="resendInvoiceBtn">Resend Invoice for selected</button>
+    </section>
+  </main>
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>
