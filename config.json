@@ -1,7 +1,7 @@
 {
   "appsScriptUrl": "https://script.google.com/macros/s/AKfycbw42LM-7ew8JyQBvV9KfRn9UkhNFjMF0OV9KTFuU4BF-Dt4zE9jhtNnYSQQTE70AqKI/exec",
   "payfast": {
-    "env": "live",    // or "sandbox"
+    "env": "live",    
     "merchant_id": "32913011",
     "merchant_key": "8wd7iwcgippud",
     "return_url": "https://wykiesautomation.co.za/success.html",
