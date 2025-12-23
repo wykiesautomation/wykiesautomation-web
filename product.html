@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product — Wykies Automation</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/api.js"></script>
+  <script defer src="assets/js/payfast.js"></script>
+  <script defer src="assets/js/product.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="container brand">
+    <img src="assets/img/logo_blue.png" alt="Wykies Automation Logo" onerror="this.style.display='none'">
+    <h1>Wykies Automation</h1>
+    <div style="flex:1"></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container" id="productPage">
+  <div id="productHero" class="card">
+    <img id="prodImg" src="assets/img/placeholder.png" alt="Product" />
+    <div class="content">
+      <div><span id="prodSku" class="badge"></span></div>
+      <h2 id="prodName">Loading…</h2>
+      <div id="prodPrice" class="price"></div>
+      <p id="prodSummary"></p>
+      <p id="prodDescription"></p>
+      <div class="btn-row">
+        <button onclick="EmailForm.openWithSku()" class="secondary">Email</button>
+        <button onclick="ProductPage.openWhatsApp()" class="outline">WhatsApp</button>
+        <button onclick="ProductPage.downloadTrial()">Download Trial</button>
+      </div>
+      <div style="margin-top:8px" class="btn-row">
+        <button onclick="ProductPage.checkout()">Buy via PayFast</button>
+        <a class="btn secondary" id="docBtn" target="_blank">Documentation</a>
+        <a class="btn outline" id="trialBtn" target="_blank">Trial (.exe)</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer container">
+  <div>© 2025 Wykies Automation • VAT 15% • Vanderbijlpark</div>
+  <div class="kicker">Built with Google Sheets CMS + PayFast</div>
+</div>
+
+
+<div class="modal" id="emailModal">
+  <div class="panel">
+    <button class="close" onclick="EmailForm.close()">✕</button>
+    <h3>Contact us</h3>
+    <form id="emailForm" class="form" onsubmit="EmailForm.submit(event)">
+      <div>
+        <label>Name</label>
+        <input name="name" required />
+      </div>
+      <div>
+        <label>Email</label>
+        <input name="email" type="email" required />
+      </div>
+      <div>
+        <label>Phone</label>
+        <input name="phone" />
+      </div>
+      <div class="full">
+        <label>Product</label>
+        <select name="sku" id="emailSku"></select>
+      </div>
+      <div class="full">
+        <label>Message</label>
+        <textarea name="message" rows="5"></textarea>
+      </div>
+      <div>
+        <label><input type="checkbox" name="copyMe" /> Copy me</label>
+      </div>
+      <div>
+        <label><input type="checkbox" name="whatsappOptIn" checked /> WhatsApp me</label>
+      </div>
+      <div class="full">
+        <button type="submit">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
