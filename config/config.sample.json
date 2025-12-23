@@ -1,0 +1,14 @@
+{
+  "appsScriptUrl": "https://script.google.com/macros/s/REPLACE_WITH_YOUR_DEPLOYMENT_ID/exec",
+  "contact": {
+    "whatsapp_number": "27716816131"
+  },
+  "payfast": {
+    "env": "live",
+    "merchant_id": "REPLACE_WITH_MERCHANT_ID",
+    "merchant_key": "REPLACE_WITH_MERCHANT_KEY",
+    "return_url": "https://wykiesautomation.co.za/success.html",
+    "cancel_url": "https://wykiesautomation.co.za/cancel.html",
+    "notify_url": "https://script.google.com/macros/s/REPLACE_WITH_YOUR_DEPLOYMENT_ID/exec?action=itn"
+  }
+}

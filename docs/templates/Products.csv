@@ -1,0 +1,13 @@
+sku,name,price,summary,description,imageUrl,trialUrl,docUrl,active
+WA-01,3D Printer Control V1,1499,Modern 3D printer controller,Full-featured desktop control and monitoring,,,,true
+WA-02,Plasma Cutter Control V1,2499,CNC plasma control,"Plasma cutter GUI, kerf compensation, material DB",,,,true
+WA-03,ECU/TCU Control System V1,6499,ECU + TCU system,Modern engine and gearbox controller with GUI,,,,true
+WA-04,Fridge/Freezer Control V1,899,Smart temperature control,Energy efficient cooling controller,,,,true
+WA-05,Nano GSM Gate Controller V1,800,GSM-based gate/garage,Remote open via GSM and SMS,,,,true
+WA-06,Solar Energy Management System V1,3999,Solar EMS,Optimize solar usage and storage,,,,true
+WA-07,Hybrid Gate Controller V1,1800,Wi‑Fi/GSM hybrid gate,Dual-channel with fallback,,,,true
+WA-08,Smart Battery Charger V1,999,Intelligent charger,Multi-stage smart charging,,,,true
+WA-09,Gate/Garage Controller V1,1009,Wi‑Fi/Bluetooth opener,Mobile app control and logs,,,,true
+WA-10,12CH Hybrid Alarm V1,1299,12-channel hybrid alarm,"Wi‑Fi primary, GSM fallback",,,,true
+WA-11,16CH Hybrid Alarm V1,5499,16-channel GSM alarm,Industrial-grade alarm controller,,,,true
+WA-12,TCU Gearbox Controller V1,4500,Standalone TCU,Configurable gears and profiles,,,,true

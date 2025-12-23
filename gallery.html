@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery • Wykies Automation</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header>
+  <img src="assets/img/logo_blue.png" alt="Wykies Automation">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+</header>
+<div id="toast" class="toast"></div>
+
+<main class="container">
+  <h1>Gallery</h1>
+  <div id="galGrid" class="grid"></div>
+</main>
+<footer class="container footer-muted">© 2025 Wykies Automation</footer>
+<script src="assets/js/api.js"></script>
+<script>
+(async function(){
+  const data = await waApi('gallery');
+  const g = document.getElementById('galGrid'); g.innerHTML='';
+  data.items.filter(x=>String(x.active).toLowerCase()==='true').forEach(x=>{
+    const d = document.createElement('div'); d.className='card';
+    d.innerHTML = `<img src="${x.url}" alt="${x.caption||''}"><div class='body'><div>${x.caption||''}</div></div>`;
+    g.appendChild(d);
+  });
+})();
+</script>
+</body></html>

@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wykies Automation — Products</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header>
+  <img src="assets/img/logo_blue.png" alt="Wykies Automation">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+</header>
+<div id="toast" class="toast"></div>
+
+<main class="container">
+  <h1>Products</h1>
+  <div id="successBanner" class="alert hidden"></div>
+  <div id="productGrid" class="grid"></div>
+</main>
+<footer class="container footer-muted">© 2025 Wykies Automation • VAT inclusive pricing • Support: wykiesautomation@gmail.com</footer>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/payfast.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+// show one-time success banner if returning from payment
+(function(){
+  const b = document.getElementById('successBanner');
+  const last = localStorage.getItem('wa_last_paid');
+  if(last){
+    const p = JSON.parse(last);
+    b.textContent = 'Payment received • Order ID: '+p.orderId+' • Amount: R'+Number(p.amount||0).toFixed(2);
+    b.classList.remove('hidden');
+    localStorage.removeItem('wa_last_paid');
+  }
+})();
+</script>
+</body></html>

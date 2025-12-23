@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment Success • Wykies Automation</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header>
+  <img src="assets/img/logo_blue.png" alt="Wykies Automation">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+</header>
+<div id="toast" class="toast"></div>
+
+<main class="container">
+  <h1>Thank you!</h1>
+  <div class="alert">
+    <p>Your payment was processed. Below are your order details:</p>
+    <div id="order"></div>
+  </div>
+  <p>You will receive a tax invoice by email (if provided). If you don't see it, please check your spam folder.</p>
+  <a class="btn" href="index.html">Back to Home</a>
+</main>
+<footer class="container footer-muted">© 2025 Wykies Automation</footer>
+<script>
+(function(){
+  const o = JSON.parse(localStorage.getItem('wa_last_order')||'{}');
+  const w = document.getElementById('order');
+  if(!o.orderId){ w.textContent='Order details not found.'; return; }
+  w.innerHTML = '<strong>Order ID:</strong> '+o.orderId+'<br>'+
+                '<strong>SKU:</strong> '+o.sku+'<br>'+
+                '<strong>Amount:</strong> R'+Number(o.amount||0).toFixed(2)+'<br>'+
+                (o.email?('<strong>Email:</strong> '+o.email+'<br>'):'');
+  // set banner for home
+  localStorage.setItem('wa_last_paid', JSON.stringify(o));
+})();
+</script>
+</body></html>
