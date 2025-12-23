@@ -1,0 +1,1 @@
+// Included in product.html via app.js startPayFast()

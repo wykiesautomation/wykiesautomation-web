@@ -1,0 +1,134 @@
+[
+  {
+    "sku": "WA-01",
+    "name": "3D Printer Control V1",
+    "price": 1499,
+    "summary": "Desktop GUI + ESP32 control",
+    "description": "Feature-rich 3D printer controller with modern GUI.",
+    "imageUrl": "assets/img/wa01.PNG",
+    "trialUrl": "",
+    "docUrl": "",
+    "active": true
+  },
+  {
+    "sku": "WA-02",
+    "name": "Plasma Cutter Control V1",
+    "price": 2499,
+    "summary": "PyQt5 GUI with DXF/SVG import",
+    "description": "Modern plasma cutter controller with material DB.",
+    "imageUrl": "assets/img/wa02.PNG",
+    "trialUrl": "",
+    "docUrl": "",
+    "active": true
+  },
+  {
+    "sku": "WA-03",
+    "name": "ECU/TCU Control System V1",
+    "price": 6499,
+    "summary": "Van Wyk ECU/TCU GUI + firmware",
+    "description": "Comprehensive engine and gearbox control suite.",
+    "imageUrl": "assets/img/wa03.PNG",
+    "trialUrl": "",
+    "docUrl": "",
+    "active": true
+  },
+  {
+    "sku": "WA-04",
+    "name": "Fridge/Freezer Control V1",
+    "price": 899,
+    "summary": "Smart temperature control",
+    "description": "Energy-efficient control for fridge/freezer units.",
+    "imageUrl": "assets/img/wa04.PNG",
+    "trialUrl": "",
+    "docUrl": "",
+    "active": true
+  },
+  {
+    "sku": "WA-05",
+    "name": "Nano GSM Gate Controller V1",
+    "price": 800,
+    "summary": "Arduino Nano GSM-based opener",
+    "description": "Affordable GSM gate control with admin list.",
+    "imageUrl": "assets/img/wa05.PNG",
+    "trialUrl": "",
+    "docUrl": "",
+    "active": true
+  },
+  {
+    "sku": "WA-06",
+    "name": "Solar Energy Management System V1",
+    "price": 3999,
+    "summary": "Home solar monitoring",
+    "description": "Manage solar charging, inverters, and loads.",
+    "imageUrl": "assets/img/wa06.PNG",
+    "trialUrl": "",
+    "docUrl": "",
+    "active": true
+  },
+  {
+    "sku": "WA-07",
+    "name": "Hybrid Gate Controller V1",
+    "price": 1800,
+    "summary": "ESP32 Wi\u2011Fi + GSM fallback",
+    "description": "Universal gate controller with dual-channel comms.",
+    "imageUrl": "assets/img/wa07.PNG",
+    "trialUrl": "",
+    "docUrl": "",
+    "active": true
+  },
+  {
+    "sku": "WA-08",
+    "name": "Smart Battery Charger V1",
+    "price": 999,
+    "summary": "Smart multi-stage charger",
+    "description": "Battery health monitoring and safe charging.",
+    "imageUrl": "assets/img/wa08.PNG",
+    "trialUrl": "",
+    "docUrl": "",
+    "active": true
+  },
+  {
+    "sku": "WA-09",
+    "name": "Gate/Garage Controller V1",
+    "price": 1009,
+    "summary": "Standalone opener unit",
+    "description": "Compact controller for gates and garages.",
+    "imageUrl": "assets/img/wa09_placeholder.png",
+    "trialUrl": "",
+    "docUrl": "",
+    "active": true
+  },
+  {
+    "sku": "WA-10",
+    "name": "12CH Hybrid Alarm V1",
+    "price": 1299,
+    "summary": "Wi\u2011Fi primary, GSM fallback",
+    "description": "12-channel hybrid alarm with profiles.",
+    "imageUrl": "assets/img/wa10.PNG",
+    "trialUrl": "",
+    "docUrl": "",
+    "active": true
+  },
+  {
+    "sku": "WA-11",
+    "name": "16CH Hybrid Alarm V1",
+    "price": 5499,
+    "summary": "ESP32-only 16-channel",
+    "description": "High-capacity alarm with sensor health.",
+    "imageUrl": "assets/img/wa11.PNG",
+    "trialUrl": "",
+    "docUrl": "",
+    "active": true
+  },
+  {
+    "sku": "WA-12",
+    "name": "TCU Gearbox Controller V1",
+    "price": 4500,
+    "summary": "Configurable gears, safety",
+    "description": "TCU with reverse lockout, speed checks.",
+    "imageUrl": "assets/img/wa12.PNG",
+    "trialUrl": "",
+    "docUrl": "",
+    "active": true
+  }
+]
