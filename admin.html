@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin — Wykies Automation</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+<script defer src="assets/js/admin.js"></script>
+<script defer src="assets/js/app.js"></script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img class="logo" src="assets/img/logo.png" alt="Logo" onerror="this.src='assets/img/logo.png'">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="admin.html" aria-current="page">Admin</a>
+    </nav>
+  </div>
+</header>
+<div class="container">
+  <h2>Admin Panel</h2>
+  <div id="loginPanel" class="panel">
+    <label>Passphrase</label>
+    <input id="passphrase" type="password" placeholder="Enter admin passphrase">
+    <button class="btn" id="loginBtn">Login</button>
+    <div id="loginStatus" class="alert" style="display:none"></div>
+  </div>
+
+  <div id="adminContent" style="display:none">
+    <div class="panel">
+      <h3>Products</h3>
+      <table class="table" id="productsTable"></table>
+    </div>
+    <div class="panel">
+      <h3>Add / Update Product Image</h3>
+      <div class="form-row">
+        <div>
+          <label>SKU</label><input id="imgSku" placeholder="e.g., WA-01">
+        </div>
+        <div>
+          <label>Image File</label><input id="imgFile" type="file" accept="image/*">
+        </div>
+      </div>
+      <button class="btn" id="uploadImgBtn">Upload Image</button>
+      <div id="uploadStatus" class="alert" style="display:none"></div>
+    </div>
+    <div class="panel">
+      <h3>Import from XLSX (Google Drive)</h3>
+      <p>Upload your .xlsx to Google Drive, paste the <b>file ID</b> below and click Import.</p>
+      <div class="form-row">
+        <div><label>Drive file ID</label><input id="xlsxFileId" placeholder="e.g. 1AbC..."/></div>
+      </div>
+      <button class="btn" id="importXlsxBtn">Import</button>
+      <div id="importStatus" class="alert" style="display:none"></div>
+    </div>
+    <div class="panel">
+      <h3>Payments</h3>
+      <div id="paymentsList"></div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="wrap">Only authorized admin may edit products.</div>
+</footer>
+</body>
+</html>
