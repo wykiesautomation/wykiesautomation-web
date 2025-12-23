@@ -1,0 +1,24 @@
+/* Wykies Automation styles */
+:root{--primary:#0A74DA;--accent:#0ED2F7;--bg:#0F172A;--text:#e5e7eb;}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text)}
+header{background:linear-gradient(90deg,var(--primary),#2563eb);padding:24px;color:#fff}
+header .brand{display:flex;align-items:center;gap:12px}
+header img{height:40px}
+main{padding:24px;max-width:1100px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:#0b132a;border:1px solid #1f2937;border-radius:10px;padding:16px;display:flex;flex-direction:column}
+.card img{height:160px;object-fit:cover;border-radius:8px;background:#0f172a}
+.card h3{margin:12px 0 8px}
+.price{font-weight:600;color:#cbd5e1}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--primary);color:#fff;text-decoration:none;border:0;cursor:pointer}
+.btn.secondary{background:#1f2937;color:#fff;border:1px solid #334155}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+footer{padding:24px;text-align:center;color:#94a3b8}
+.input{width:100%;padding:10px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#e5e7eb}
+label{display:block;margin-top:12px;margin-bottom:6px}
+.container{max-width:900px;margin:0 auto}
+hr{border-color:#1f2937}
+nav a{color:#fff;margin-right:14px}
+.badge{display:inline-block;padding:4px 8px;background:#1f2937;border:1px solid #334155;border-radius:999px;color:#cbd5e1;font-size:12px}
+.banner{padding:10px;background:#082f49;border-bottom:1px solid #0ea5e9;color:#bae6fd}
