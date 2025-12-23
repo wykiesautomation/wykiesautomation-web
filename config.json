@@ -1,0 +1,15 @@
+{
+  "appsScriptUrl": "https://script.google.com/macros/s/REPLACE_WITH_WEB_APP_URL/exec",
+  "payfast": {
+    "env": "live",
+    "merchant_id": "32913011",
+    "merchant_key": "8wd7iwcgippud",
+    "return_url": "https://wykiesautomation.co.za/success.html",
+    "cancel_url": "https://wykiesautomation.co.za/cancel.html",
+    "notify_url": "https://script.google.com/macros/s/REPLACE_WITH_WEB_APP_URL/exec?action=itn"
+  },
+  "contact": {
+    "admin_email": "wykiesautomation@gmail.com",
+    "whatsapp_number": "27716816131"
+  }
+}
