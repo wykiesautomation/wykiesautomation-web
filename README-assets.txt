@@ -1,0 +1,1 @@
+Place logo-blue.png under assets/img/. Use original blue logo only.
