@@ -1,0 +1,6 @@
+
+:root{ --primary:#0D47A1; --accent:#FF1744; --neutral:#121212; }
+.bg-primary{ background-color: var(--primary)!important; }
+.btn-accent{ background-color: var(--accent); color:#fff; }
+header.bg-dark{ background: linear-gradient(135deg, #0D47A1 0%, #121212 100%); }
+#product-grid .card{ border:1px solid rgba(0,0,0,.08); }
