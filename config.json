@@ -1,0 +1,85 @@
+{
+  "site": {
+    "domain": "wykiesautomation.co.za",
+    "admin": "admin.wykiesautomation.co.za",
+    "company": "Wykies Automation",
+    "contactEmail": "wykiesautomation@gmail.com",
+    "whatsapp": "27716816131",
+    "phoneLocal": "071 681 6131"
+  },
+  "cms": {
+    "sheetId": "12qRMe6pAPVaQtosZBnhVtpMwyNks7W8uY9PX1mF620k",
+    "appsScriptBase": "",
+    "endpoints": {
+      "products": "/api/products",
+      "product": "/api/product",
+      "contact": "/api/contact",
+      "preorder": "/api/preorder",
+      "payfastNotify": "/api/payfast/notify"
+    }
+  },
+  "payfast": {
+    "merchant_id": "32913011",
+    "merchant_key": "8wd7iwcgippud",
+    "process_url_live": "https://www.payfast.co.za/eng/process",
+    "process_url_sandbox": "https://sandbox.payfast.co.za/eng/process",
+    "notify_url": "https://wykiesautomation.co.za/api/payfast-itn"
+  },
+  "fallbackProducts": [
+    {
+      "sku": "WA-01",
+      "name": "Hybrid Universal Gate Opener (ESP32)",
+      "price": 1499.0
+    },
+    {
+      "sku": "WA-02",
+      "name": "GSM Gate Opener (Arduino Nano)",
+      "price": 2499.0
+    },
+    {
+      "sku": "WA-03",
+      "name": "16-Channel GSM Gate Control System",
+      "price": 6499.0
+    },
+    {
+      "sku": "WA-04",
+      "name": "Plasma Cutter GUI (Desktop Prototype)",
+      "price": 899.0
+    },
+    {
+      "sku": "WA-05",
+      "name": "Van Wyk ECU/TCU GUI (Desktop)",
+      "price": 800.0
+    },
+    {
+      "sku": "WA-06",
+      "name": "3D Printer GUI (ESP32 Controller)",
+      "price": 3999.0
+    },
+    {
+      "sku": "WA-07",
+      "name": "12-Channel Hybrid Alarm (Wi\u2011Fi+GSM)",
+      "price": 1800.0
+    },
+    {
+      "sku": "WA-08",
+      "name": "ESP32\u2011only Alarm (16 Channels)",
+      "price": 999.0
+    },
+    {
+      "sku": "WA-09",
+      "name": "Hybrid Gate Controller GUI (Desktop)",
+      "price": 1009.0
+    },
+    {
+      "sku": "WA-10",
+      "name": "VanWyk DriveBench Shifter GUI",
+      "price": 1299.0
+    },
+    {
+      "sku": "WA-11",
+      "name": "Plasma Cutter Documentation Pack",
+      "price": 5499.0
+    }
+  ]
+}

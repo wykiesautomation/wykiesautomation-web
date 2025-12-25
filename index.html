@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wykies Automation</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <svg width="160" height="40" viewBox="0 0 160 40" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="160" height="40" fill="#0b5ed7" rx="6"/>
+        <text x="12" y="26" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#fff">Wykies Automation</text>
+      </svg>
+    </div>
+    <nav>
+      <a href="/products.html">Products</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/pre-order.html">Pre‑Order</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Modern Automation Tools & Embedded GUIs</h1>
+      <p>Gate/garage openers, alarms, Plasma Cutter GUI, ECU/TCU dashboards, and more — built by Janes Van Wyk.</p>
+      <p>
+        <a class="btn" href="/products.html">Browse Products</a>
+        <a class="btn secondary" href="https://wa.me/27716816131?text=Hi%20Wykies%20Automation%2C%20I%27m%20interested%20in%20your%20products" target="_blank">WhatsApp Us</a>
+      </p>
+    </section>
+
+    <section id="featured">
+      <h2>Featured</h2>
+      <div id="featured-grid" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Wykies Automation — VAT‑inclusive prices. Contact: <a href="mailto:wykiesautomation@gmail.com">wykiesautomation@gmail.com</a> · Tel: 071 681 6131</small>
+  </footer>
+
+  <script src="/js/app.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const cfg = window.WA_CONFIG;
+      const featured = (cfg.fallbackProducts || []).slice(0, 4);
+      const grid = document.getElementById('featured-grid');
+      featured.forEach(p => {
+        const card = document.createElement('a');
+        card.href = `/product.html?sku=${encodeURIComponent(p.sku)}`;
+        card.className = 'card';
+        card.innerHTML = `<h3>${p.name}</h3><p>SKU: ${p.sku}</p><div class="price">R ${Number(p.price).toFixed(2)}</div>`;
+        grid.appendChild(card);
+      });
+    });
+  </script>
+</body>
+</html>

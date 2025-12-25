@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pre‑Order · Wykies Automation</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header class="site-header"><a href="/">← Home</a></header>
+  <main class="container">
+    <h1>Pre‑Order</h1>
+    <form id="preorderForm" class="form">
+      <label>Product SKU <input name="sku" required/></label>
+      <label>Full Name <input name="name" required/></label>
+      <label>Email <input name="email" type="email" required/></label>
+      <label>Phone <input name="phone" required/></label>
+      <label>Notes <textarea name="notes"></textarea></label>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+    <div id="status"></div>
+  </main>
+  <script src="/js/app.js"></script>
+  <script>
+    document.getElementById('preorderForm').addEventListener('submit', async (e) => {{
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      const ok = await window.submitForm('/api/preorder', Object.fromEntries(fd.entries()));
+      document.getElementById('status').textContent = ok ? 'Submitted!' : 'Failed';
+      if (ok) e.target.reset();
+    }});
+  </script>
+</body>
+</html>
