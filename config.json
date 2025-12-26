@@ -1,0 +1,15 @@
+{
+  "site_name": "Wykies Automation",
+  "admin_email": "wykiesautomation@gmail.com",
+  "whatsapp_number_international": "27716816131",
+  "google": {
+    "apps_script_url": "REPLACE_WITH_APPS_SCRIPT_EXEC_URL",
+    "products_url": "REPLACE_WITH_APPS_SCRIPT_EXEC_URL?op=products",
+    "gallery_list_url": "REPLACE_WITH_APPS_SCRIPT_EXEC_URL?op=gallery_list&published=1"
+  },
+  "payfast": {
+    "sandbox": true
+  },
+  "version": "v7.0",
+  "build_date": "2025-12-26"
+}
