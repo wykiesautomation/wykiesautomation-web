@@ -1,0 +1,29 @@
+{
+  "environment": "prod",
+  "domain": "wykiesautomation.co.za",
+  "sheetId": "12qRMe6pAPVaQtosZBnhVtpMwyNks7W8uY9PX1mF620k",
+  "appsScriptUrl": "<YOUR_APPS_SCRIPT_WEBAPP_URL>",
+  "products": [
+    {
+      "sku": "WA-01",
+      "name": "3D Printer Control V1",
+      "price": 1499,
+      "summary": "Compact controller UI",
+      "imageUrl": "assets/img/wa-01.png"
+    },
+    {
+      "sku": "WA-02",
+      "name": "Plasma Cutter Control V1",
+      "price": 2499,
+      "summary": "CNC plasma control UI",
+      "imageUrl": "assets/img/wa-02.png"
+    },
+    {
+      "sku": "WA-07",
+      "name": "Hybrid Gate Controller V1",
+      "price": 1800,
+      "summary": "Wi\u2011Fi/GSM hybrid gate",
+      "imageUrl": "assets/img/wa-07.png"
+    }
+  ]
+}
