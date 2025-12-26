@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product • Wykies Automation</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="module">
+  import { renderProduct } from './assets/js/app.js';
+  window.addEventListener('DOMContentLoaded', renderProduct);
+</script>
+</head><body>
+<header><img src="assets/img/logo.png" alt="Wykies Automation"><nav><a href="index.html">Home</a><a href="gallery.html">Gallery</a><a href="product.html">Products</a></nav></header>
+<div class="container"><div class="card">
+  <h2 id="name"></h2><p class="badge" id="sku"></p><p class="price" id="price"></p>
+  <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" onclick="BUY(document.getElementById('sku').textContent)">Buy Now</button><a class="btn" href="index.html">Back</a></div>
+</div></div>
+</body></html>
