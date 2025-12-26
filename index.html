@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Wykies Automation — Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="assets/img/logo-blue.png" as="image">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="assets/img/logo-blue.png" alt="Wykies Automation logo">
+      <span>Wykies Automation</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="product.html">Products</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h1>Modern control systems, GUIs and tools — built in South Africa.</h1>
+        <p class="badge">Serverless backend · Return/Cancel UX enabled</p>
+        <div style="display:flex; gap:10px; margin-top:10px;">
+          <a class="btn whatsapp" href="https://wa.me/27716816131?text=Hi%20Wykies%20Automation" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          <a class="btn" href="gallery.html">View Gallery</a>
+          <a class="btn btn-primary" href="product.html">Browse Products</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>VAT‑inclusive pricing & GitHub Pages hosting</h3>
+        <p>All public pages are fast, secure, and backed by a Google Sheets CMS + Apps Script Web App.</p>
+      </div>
+    </section>
+
+    <section style="margin-top:24px;">
+      <h2>Products</h2>
+      <div id="product-grid" class="grid">
+        <!-- populated by app.js / products endpoint -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="fine">© 2025 Wykies Automation • VAT‑inclusive pricing • GitHub Pages</div>
+    <div class="fine"><a href="return.html">Return</a> • <a href="cancel.html">Cancel</a></div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
