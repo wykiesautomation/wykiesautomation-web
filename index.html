@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; frame-ancestors 'none'; upgrade-insecure-requests">
+  <title>Wykies Automation — Products</title>
+  <meta name="description" content="Modern control systems from Wykies Automation — browse products, view details, and purchase securely via PayFast.">
+  <link rel="canonical" href="https://wykiesautomation.co.za/">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <img class="logo" src="assets/images/logo-blue.png" alt="Wykies Automation logo">
+    <h1>Wykies Automation</h1>
+    <span class="badge">VAT-inclusive pricing • Secure PayFast checkout</span>
+  </header>
+  <div class="container">
+    <div class="hero">Explore our product catalog below. Click a product to view details, download the trial, or read the docs.</div>
+    <div id="grid" class="grid"></div>
+  </div>
+  <footer>
+    <div>Contact: <a href="mailto:wykiesautomation@gmail.com">wykiesautomation@gmail.com</a> • WhatsApp: <a href="https://wa.me/27716816131" target="_blank" rel="noopener">+27 71 681 6131</a></div>
+    <div><a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a> • <a href="refund.html">Refunds</a></div>
+  </footer>
+  <div id="contactModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
+    <div class="modal">
+      <h2 id="contactTitle">Contact Wykies Automation</h2>
+      <div class="input"><label>Product</label><select id="contactProduct"></select></div>
+      <div class="input"><label>Name</label><input id="contactName" type="text" placeholder="Your name"></div>
+      <div class="input"><label>Email</label><input id="contactEmail" type="email" placeholder="you@example.com"></div>
+      <div class="input"><label>Phone</label><input id="contactPhone" type="tel" placeholder="071 681 6131"></div>
+      <div class="input"><label>Message</label><textarea id="contactMessage" rows="4" placeholder="How can we help?"></textarea></div>
+      <div class="btnrow">
+        <button class="btn" onclick="app.submitContact()">Send Email</button>
+        <button class="btn secondary" onclick="app.closeContact()">Close</button>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
