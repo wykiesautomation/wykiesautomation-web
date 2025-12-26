@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gallery</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'; frame-ancestors 'none'; upgrade-insecure-requests">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <img src="assets/img/logo-blue.svg" alt="Wykies Automation logo">
+    <a href="index.html">Home</a>
+    <a href="gallery.html" aria-current="page">Gallery</a>
+    <div class="spacer"></div>
+  </nav>
+</header>
+<main class="main">
+  <h1>Product Gallery</h1>
+  <div class="grid gallery">
+    <img src="assets/img/gallery-01.svg" alt="Gallery 01" loading="lazy">
+    <img src="assets/img/gallery-02.svg" alt="Gallery 02" loading="lazy">
+    <img src="assets/img/gallery-03.svg" alt="Gallery 03" loading="lazy">
+    <img src="assets/img/gallery-04.svg" alt="Gallery 04" loading="lazy">
+    <img src="assets/img/gallery-05.svg" alt="Gallery 05" loading="lazy">
+    <img src="assets/img/gallery-06.svg" alt="Gallery 06" loading="lazy">
+  </div>
+</main>
+<div id="lightbox" class="lightbox"><img id="lightbox-img" alt="Preview"></div>
+<footer class="footer"><div class="main">&copy; <span id="year"></span> Wykies Automation</div></footer>
+<script src="assets/js/app.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
