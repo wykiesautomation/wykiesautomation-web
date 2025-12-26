@@ -1,0 +1,136 @@
+{
+  "products": [
+    {
+      "sku": "WA-01",
+      "name": "3D Printer Control V1",
+      "price": 1499.0,
+      "summary": "Starter control for printers",
+      "description": "Markdown description here",
+      "imageUrl": "assets/img/wa-01.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-02",
+      "name": "Plasma Cutter Control V1",
+      "price": 2499.0,
+      "summary": "CNC plasma controller",
+      "description": "Markdown description here",
+      "imageUrl": "assets/img/wa-02.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-03",
+      "name": "ECU/TCU Control System V1",
+      "price": 6499.0,
+      "summary": "Engine & gearbox control",
+      "description": "Markdown description here",
+      "imageUrl": "assets/img/wa-03.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-04",
+      "name": "Fridge/Freezer Control V1",
+      "price": 899.0,
+      "summary": "Temp controller",
+      "description": "Markdown description here",
+      "imageUrl": "assets/img/wa-04.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-05",
+      "name": "Nano GSM Gate Controller V1",
+      "price": 800.0,
+      "summary": "Nano GSM gate unit",
+      "description": "Markdown description here",
+      "imageUrl": "assets/img/wa-05.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-06",
+      "name": "Solar Energy Management System V1",
+      "price": 3999.0,
+      "summary": "Solar EMS",
+      "description": "Markdown description here",
+      "imageUrl": "assets/img/wa-06.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-07",
+      "name": "Hybrid Gate Controller V1",
+      "price": 1800.0,
+      "summary": "Hybrid Wi\u2011Fi/GSM gate",
+      "description": "Markdown description here",
+      "imageUrl": "assets/img/wa-07.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-08",
+      "name": "Smart Battery Charger V1",
+      "price": 999.0,
+      "summary": "Smart charger",
+      "description": "Markdown description here",
+      "imageUrl": "assets/img/wa-08.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-09",
+      "name": "Gate/Garage Controller V1",
+      "price": 1009.0,
+      "summary": "Gate/garage controller",
+      "description": "Markdown description here",
+      "imageUrl": "assets/img/wa-09.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-10",
+      "name": "12CH Hybrid Alarm V1",
+      "price": 1299.0,
+      "summary": "12-channel hybrid alarm",
+      "description": "Markdown description here",
+      "imageUrl": "assets/img/wa-10.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-11",
+      "name": "16CH Hybrid Alarm V1",
+      "price": 5499.0,
+      "summary": "16-channel hybrid alarm",
+      "description": "Markdown description here",
+      "imageUrl": "assets/img/wa-11.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    },
+    {
+      "sku": "WA-12",
+      "name": "TCU Gearbox Controller V1",
+      "price": 4500.0,
+      "summary": "Gearbox controller",
+      "description": "Markdown description here",
+      "imageUrl": "assets/img/wa-12.png",
+      "trialUrl": "nan",
+      "docUrl": "nan",
+      "active": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+
+:root{
+  --bg:#0e1117; --panel:#111827; --text:#ffffff; --muted:#94a3b8; --brand:#0d6efd; --accent:#22d3ee; --ok:#22c55e; --warn:#f59e0b; --err:#ef4444;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+header{position:sticky;top:0;background:linear-gradient(90deg,var(--panel),#0b1324 60%,#0b132400);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #0b1324;z-index:50}
+nav{display:flex;align-items:center;gap:24px;padding:12px 20px}
+nav img.logo{height:40px}
+nav a{color:#cbd5e1;text-decoration:none;font-weight:600}
+nav a.cta{margin-left:auto;padding:10px 16px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--accent));color:white}
+.hero{display:grid;place-items:center;min-height:56vh;background:radial-gradient(1200px 600px at 80% -20%,rgba(13,110,253,.25),transparent 40%),radial-gradient(800px 400px at 20% 30%,rgba(34,211,238,.18),transparent 30%)}
+.hero h1{font-size:clamp(28px,5vw,56px);margin:0;text-align:center}
+.hero p{max-width:720px;text-align:center;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;padding:24px}
+.card{background:var(--panel);border:1px solid #1f2937;border-radius:14px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,.35)}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.card .body{padding:14px}
+.price{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:#0b1324;color:#e2e8f0;font-weight:700}
+.badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#0b1324;color:#a1a1aa;font-size:12px}
+footer{padding:24px;text-align:center;color:#94a3b8;border-top:1px solid #1f2937}
+.whatsapp{position:fixed;right:18px;bottom:18px;background:#25D366;color:white;border-radius:999px;padding:12px 16px;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+@media(prefers-color-scheme:light){:root{--bg:#f7fafc;--panel:#ffffff;--text:#0f172a;--muted:#334155}}
