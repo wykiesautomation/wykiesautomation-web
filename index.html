@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; frame-ancestors 'none'; upgrade-insecure-requests"> 
+  <title>Wykies Automation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img src="/assets/img/logo-blue.svg" alt="Wykies Automation logo" class="logo" />
+      <nav class="nav">
+        <a href="#products">Products</a>
+        <a href="/legal/privacy.html">Privacy</a>
+        <a href="/legal/terms.html">Terms</a>
+        <a class="btn btn-outline" href="https://wa.me/27716816131?text=Hello%20Wykies%20Automation">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Intro">
+    <div class="hero-inner container">
+      <div class="hero-copy">
+        <h1>Industrial‑grade control systems, made simple.</h1>
+        <p>Pre‑configured controllers and tools for gates, alarms, CNC, and more. VAT‑inclusive pricing. Local support.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#products">View Products</a>
+          <a class="btn btn-secondary" href="mailto:wykiesautomation@gmail.com?subject=Enquiry">Email Us</a>
+          <a class="btn btn-outline" href="https://wa.me/27716816131?text=Product%20enquiry">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="products" aria-label="Products">
+      <header class="section-head">
+        <h2>Products</h2>
+        <input id="search" class="search" type="search" placeholder="Search by name or SKU" aria-label="Search products" />
+      </header>
+
+      <ul id="productGrid" class="grid grid-products" aria-live="polite"></ul>
+    </section>
+
+    <section id="gallery" aria-label="Gallery Preview">
+      <header class="section-head"><h2>Gallery</h2></header>
+      <ul id="galleryGrid" class="grid grid-gallery"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Wykies Automation · <a href="/legal/privacy.html">Privacy</a> · <a href="/legal/terms.html">Terms</a></small>
+    </div>
+  </footer>
+
+  <script src="/assets/js/app.js" defer></script>
+</body>
+</html>
