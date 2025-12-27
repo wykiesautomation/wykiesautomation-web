@@ -1,0 +1,134 @@
+[
+  {
+    "sku": "WA-01",
+    "name": "3D Printer Control V1",
+    "price": 1499,
+    "image": "wa-01.png",
+    "summary": "Compact controller for desktop printers.",
+    "description": "Features: Motion control, thermal safety, USB config.",
+    "trialUrl": "#",
+    "docUrl": "#",
+    "active": true
+  },
+  {
+    "sku": "WA-02",
+    "name": "Plasma Cutter Control V1",
+    "price": 2499,
+    "image": "wa-02.png",
+    "summary": "Industrial plasma CNC control.",
+    "description": "DXF/SVG import, kerf compensation, sensor feedback.",
+    "trialUrl": "#",
+    "docUrl": "#",
+    "active": true
+  },
+  {
+    "sku": "WA-03",
+    "name": "ECU/TCU Control System V1",
+    "price": 6499,
+    "image": "wa-03.png",
+    "summary": "Automotive engine & gearbox suite.",
+    "description": "Profiles, safety checklist, sensor calibration.",
+    "trialUrl": "#",
+    "docUrl": "#",
+    "active": true
+  },
+  {
+    "sku": "WA-04",
+    "name": "Fridge/Freezer Control V1",
+    "price": 899,
+    "image": "wa-04.png",
+    "summary": "Smart temperature controller.",
+    "description": "Energy saving modes, alarms, logs.",
+    "trialUrl": "#",
+    "docUrl": "#",
+    "active": true
+  },
+  {
+    "sku": "WA-05",
+    "name": "Nano GSM Gate Controller V1",
+    "price": 800,
+    "image": "wa-05.png",
+    "summary": "Entry-level GSM gate unit.",
+    "description": "Add/Del numbers, status polling, panic.",
+    "trialUrl": "#",
+    "docUrl": "#",
+    "active": true
+  },
+  {
+    "sku": "WA-06",
+    "name": "Solar Energy Management System V1",
+    "price": 3999,
+    "image": "wa-06.png",
+    "summary": "Residential solar monitor.",
+    "description": "Load scheduling, battery health, remote.",
+    "trialUrl": "#",
+    "docUrl": "#",
+    "active": true
+  },
+  {
+    "sku": "WA-07",
+    "name": "Hybrid Gate Controller V1",
+    "price": 1800,
+    "image": "wa-07.png",
+    "summary": "Wi\u2011Fi/Bluetooth hybrid gate control.",
+    "description": "Primary Wi\u2011Fi, GSM fallback, logs.",
+    "trialUrl": "#",
+    "docUrl": "#",
+    "active": true
+  },
+  {
+    "sku": "WA-08",
+    "name": "Smart Battery Charger V1",
+    "price": 999,
+    "image": "wa-08.png",
+    "summary": "Intelligent multi\u2011stage charging.",
+    "description": "Profiles, protections, diagnostics.",
+    "trialUrl": "#",
+    "docUrl": "#",
+    "active": true
+  },
+  {
+    "sku": "WA-09",
+    "name": "Gate/Garage Controller V1",
+    "price": 1009,
+    "image": "wa-09.png",
+    "summary": "Compact gate/garage controller.",
+    "description": "RF integration, auto\u2011close, safety.",
+    "trialUrl": "#",
+    "docUrl": "#",
+    "active": true
+  },
+  {
+    "sku": "WA-10",
+    "name": "12CH Hybrid Alarm V1",
+    "price": 1299,
+    "image": "wa-10.png",
+    "summary": "12\u2011channel hybrid alarm.",
+    "description": "Wi\u2011Fi primary, GSM fallback, zones.",
+    "trialUrl": "#",
+    "docUrl": "#",
+    "active": true
+  },
+  {
+    "sku": "WA-11",
+    "name": "16CH Hybrid Alarm V1",
+    "price": 5499,
+    "image": "wa-11.png",
+    "summary": "16\u2011channel hybrid alarm.",
+    "description": "Advanced logging, sensor health.",
+    "trialUrl": "#",
+    "docUrl": "#",
+    "active": true
+  },
+  {
+    "sku": "WA-12",
+    "name": "TCU Gearbox Controller V1",
+    "price": 4500,
+    "image": "wa-12.png",
+    "summary": "Configurable gearbox controller.",
+    "description": "Up to 10 gears, reverse lockout, profiles.",
+    "trialUrl": "#",
+    "docUrl": "#",
+    "active": true
+  }
+]

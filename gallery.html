@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery — Wykies Automation</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand"><div class="logo"></div> WYKIES AUTOMATION</div>
+    <div>
+      <a class="btn ghost" href="index.html">Home</a>
+      <a class="btn ghost" href="products.html">Products</a>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>Gallery</h1>
+    <p class="muted">Tap images to view larger.</p>
+    <div class="gallery grid" style="grid-template-columns:repeat(3,1fr)">
+      <img src="assets/img/products/wa-01.png" alt="WA‑01">
+      <img src="assets/img/products/wa-02.png" alt="WA‑02">
+      <img src="assets/img/products/wa-03.png" alt="WA‑03">
+      <img src="assets/img/products/wa-04.png" alt="WA‑04">
+      <img src="assets/img/products/wa-05.png" alt="WA‑05">
+      <img src="assets/img/products/wa-06.png" alt="WA‑06">
+    </div>
+    <div id="lightbox" class="lightbox"><img alt="expanded"></div>
+  </div>
+  <script type="module">
+    import { initGallery } from './assets/js/app.js';
+    initGallery();
+  </script>
+</body>
+</html>

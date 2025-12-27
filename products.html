@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products — Wykies Automation</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand"><div class="logo"></div> WYKIES AUTOMATION</div>
+    <div>
+      <a class="btn ghost" href="index.html">Home</a>
+      <a class="btn ghost" href="gallery.html">Gallery</a>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>Products</h1>
+    <div class="search">
+      <input id="search-input" type="search" placeholder="Search SKU, name or summary…">
+    </div>
+    <div id="products-grid" class="grid products"></div>
+  </div>
+  <script type="module">
+    import { initProductsPage } from './assets/js/app.js';
+    initProductsPage();
+  </script>
+</body>
+</html>
