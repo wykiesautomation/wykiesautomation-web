@@ -1,1 +1,0 @@
-{"chunks": [{"type": "html", "chunk_number": 1, "paragraphs": [{"paragraph_number": 1, "text": "Placeholder refunds policy. Replace with final legal text."}], "token_count": 6}]}
