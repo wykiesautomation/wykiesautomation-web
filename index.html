@@ -1,0 +1,124 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Wykies Automation — Smart Control Systems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://drive.google.com; style-src 'self' 'unsafe-inline'; script-src 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/branding.css" />
+  <link rel="stylesheet" href="assets/css/dark.css" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <meta property="og:title" content="Wykies Automation">
+  <meta property="og:description" content="Smart Control Systems for Makers & Installers">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta name="theme-color" content="#2F76FF">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand-logo" aria-label="Wykies Automation">
+        <img src="assets/img/logo-blue-256.png" alt="Wykies Automation Logo" width="128" height="40">
+      </a>
+      <nav>
+        <a href="gallery.html">Gallery</a>
+        <a href="products/product.html">Products</a>
+        <a href="docs/">Docs</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/27716816131">WhatsApp</a>
+        <button id="waThemeBtn" class="btn btn-outline">Theme: system</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero hero-blue">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Smart Control Systems for Makers &amp; Installers</h1>
+        <p>Modern GUIs, hardware integration, and streamlined payments — built in South Africa.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="downloads/trial/">Download Trial</a>
+          <a class="btn btn-secondary" href="docs/">View Docs</a>
+          <a class="btn btn-outline" href="mailto:wykiesautomation@gmail.com">Contact</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/27716816131">WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="hero-blob"></div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="search-row">
+        <input id="searchInput" class="search-input" type="search" placeholder="Search products by name, summary, or SKU…" aria-label="Search products" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Products</h2>
+      <div id="productsGrid" class="grid cards-3"></div>
+      <div class="align-right"><a class="btn btn-link" href="products/product.html">View all products →</a></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h3 class="section-title">Gallery Preview</h3>
+      <div id="galleryGrid" class="grid thumbs-3"></div>
+      <div class="align-right"><a class="btn btn-link" href="gallery.html">Open Full Gallery →</a></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand-logo" aria-label="Wykies Automation">
+          <img src="assets/img/logo-blue-128.png" alt="Wykies Automation Logo" width="96" height="30">
+        </a>
+        <div class="copy">© 2025 Wykies Automation</div>
+      </div>
+      <div>
+        Email: <a href="mailto:wykiesautomation@gmail.com">wykiesautomation@gmail.com</a><br>
+        WhatsApp: <a href="https://wa.me/27716816131">+27 71 681 6131</a>
+      </div>
+      <div class="footer-links">
+        <a href="legal/privacy.html">Privacy</a>
+        <a href="legal/terms.html">Terms</a>
+        <a href="legal/refunds.html">Refunds</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Enquiry Modal shared on Home -->
+  <div id="enquiryModal" class="modal" hidden>
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close">×</button>
+      <h3 id="enquiryTitle">Enquire about</h3>
+      <form id="enquiryForm">
+        <input type="hidden" id="enquirySku" name="sku">
+        <div class="form-row"><label for="enquiryName">Your Name</label><input type="text" id="enquiryName" required></div>
+        <div class="form-row"><label for="enquiryEmail">Your Email</label><input type="email" id="enquiryEmail" required></div>
+        <div class="form-row"><label for="enquiryMsg">Message</label><textarea id="enquiryMsg" rows="4" required placeholder="Tell us what you need…"></textarea></div>
+        <button type="submit" class="btn btn-primary">Send Enquiry</button>
+      </form>
+      <div id="enquiryStatus" class="muted" style="margin-top:10px;"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/theme.js" defer></script>
+  <script>
+    window.WA_BOOT = {
+      sheetId: "12qRMe6pAPVaQtosZBnhVtpMwyNks7W8uY9PX1mF620k",
+      apiBase: ""  // set to Apps Script Web App URL when ready
+    };
+    WA.initHome();
+  </script>
+</body>
+</html>
