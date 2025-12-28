@@ -1,0 +1,17 @@
+[
+  {
+    "src": "/assets/img/products/wa-01.png",
+    "alt": "WA-01",
+    "caption": "WA-01 Controller"
+  },
+  {
+    "src": "/assets/img/products/wa-02.png",
+    "alt": "WA-02",
+    "caption": "Plasma Cutter Control"
+  },
+  {
+    "src": "/assets/img/products/wa-03.png",
+    "alt": "WA-03",
+    "caption": "ECU/TCU GUI"
+  }
+]
