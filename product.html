@@ -1,23 +1,209 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Product • Wykies Automation</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  assets/css/styles.css
+  <!-- Optional: local styles for the product grid (safe to keep even with external CSS) -->
+  <style>
+    :root { --brand-blue:#2F76FF; --bg:#0c0f13; --text:#fff; --muted:#b7c0cc; --whatsapp:#25D366; }
+    body { background: var(--bg); color: var(--text); }
+    main { max-width: 1200px; margin: 24px auto; padding: 0 16px; }
+    .section { margin: 24px 0; }
+    .section h2 { margin: 0 0 12px; font-size: 1.8rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .card { background: #11151a; border: 1px solid #1e2630; border-radius: 12px; padding: 12px; }
+    .card-img { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+    .card-title { margin: 10px 0 4px; font-size: 1.1rem; }
+    .card-price { margin: 0 0 10px; color: var(--brand-blue); font-weight: 700; }
+    .vat { color: var(--muted); font-weight: 500; }
+    .btn { display: inline-block; padding: 8px 12px; border-radius: 8px; font-weight: 600; text-decoration: none; border: 1px solid transparent; margin-right: 8px; margin-bottom: 8px; }
+    .btn-primary { background: var(--brand-blue); color: #fff; border-color: var(--brand-blue); }
+    .btn-outline { background: transparent; color: var(--brand-blue); border-color: var(--brand-blue); }
+    .btn-wa { background: var(--whatsapp); color: #062c12; border-color: var(--whatsapp); }
+    /* Header/Footer (kept minimal—your styles.css will also apply) */
+    .site-header, .site-footer { background: #11151a; border-bottom: 1px solid #1e2630; }
+    .site-header { position: sticky; top: 0; z-index: 1000; }
+    .site-header .logo { font-weight: 800; padding: 12px 16px; }
+    .site-header nav { padding: 12px 16px; display: flex; gap: 12px; }
+    .site-header nav a { color: #e7edf5; text-decoration: none; font-weight: 600; }
+    .site-footer { padding: 16px; text-align: center; color: var(--muted); border-top: 1px solid #1e2630; }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="logo">Wykies Automation</div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="gallery.html">Gallery</a>
+      index.htmlHome</a>
+      gallery.htmlGallery</a>
     </nav>
   </header>
+
   <main>
+    <!-- Existing placeholder retained -->
     <article id="product"></article>
+
+    <!-- BEGIN: Wykies Automation – 12 Products Grid (PNG only) -->
+    <section class="section" id="products">
+      <h2>Products</h2>
+      <div class="grid">
+        <!-- WA-01 -->
+        <article class="card">
+          /assets/img/products/wa-01.png?v=1
+          <h3 class="card-title">WA‑01 — 3D Printer Control V1</h3>
+          <p class="card-price">R1 499 <span class="vat">(VAT‑incl.)</span></p>
+          <div class="card-cta">
+            /products/WA-01.htmlView Product</a>
+            /docs/WA-01.htmlView Documents</a>
+            <a class="btn btn-wa" href="xt=Hi%20Wykies%20Automation%2C%20I%27m%20interested%20in%20WA-01WhatsApp</a>
+            mailto:wykiesautomation@gmail.com?subject=Enquiry%20about%20WA-01Email</a>
+          </div>
+        </article>
+
+        <!-- WA-02 -->
+        <article class="card">
+          /assets/img/products/wa-02.png?v=1
+          <h3 class="card-title">WA‑02 — Plasma Cutter Control V1</h3>
+          <p class="card-price">R2 499 <span class="vat">(VAT‑incl.)</span></p>
+          <div class="card-cta">
+            /products/WA-02.htmlView Product</a>
+            <a class="btn btn-outline" href="/docs/WA-     https://wa.me/27716816131?text=Hi%20Wykies%20Automation%2C%20I%27m%20interested%20in%20WA-02WhatsApp</a>
+            mailto:wykiesautomation@gmail.com?subject=Enquiry%20about%20WA-02Email</a>
+          </div>
+        </article>
+
+        <!-- WA-03 -->
+        <article class="card">
+          /assets/img/products/wa-03.png?v=1
+          <h3 class="card-title">WA‑03 — ECU/TCU Control System V1</h3>
+          <p class="card-price">R6 499 <span class="vat">(VAT‑incl.)</span></p>
+          <div class="card-cta">
+            /products/WA-03.htmlView Product</a>
+            /docs/WA-03.htmlView Documents</a>
+            <a class="btn btn-wa" href="https://wa.me/27716816131?text=Hi%20Wykies%20Automation%2C%20I%27m%20interested%20in%20WA-ailto:wykiesautomation@gmail.com?subject=Enquiry%20about%20WA-03Email</a>
+          </div>
+        </article>
+
+        <!-- WA-04 -->
+        <article class="card">
+          /assets/img/products/wa-04.png?v=1
+          <h3 class="card-title">WA‑04</h3>
+          <p class="card-price">R899 <span class="vat">(VAT‑incl.)</span></p>
+          <div class="card-cta">
+            /products/WA-04.htmlView Product</a>
+            /docs/WA-04.htmlView Documents</a>
+            <a class="btn btn-wa" href="https://Wykies%20Automation%2C%20I%27m%20interested%20in%20WA-04WhatsApp</a>
+            <a class="btn btn-outline" href="mailto:wykiesautomation@gmail.com?subject=En        </div>
+        </article>
+
+        <!-- WA-05 -->
+        <article class="card">
+          /assets/img/products/wa-05.png?v=1
+          <h3 class="card-title">WA‑05</h3>
+          <p class="card-price">R800 <span class="vat">(VAT‑incl.)</span></p>
+          <div class="card-cta">
+            /products/WA-05.htmlView Product</a>
+            /docs/WA-05.htmlView Documents</a>
+            <a class="btn btn-wa" href="https%20Wykies%20Automation%2C%20I%27m%20interested%20in%20WA-05WhatsApp</a>
+            mailto:wykiesautomation@gmail.com?subject=Enquiry%20about%20WA-05Email</a>
+          </div>
+        </article>
+
+        <!-- WA-06 -->
+        <article class="card">
+          /assets/img/products/wa-06.png?v=1
+          <h3 class="card-title">WA‑06</h3>
+          <p class="card-price">R3 999 <span class="vat">(VAT‑incl.)</span></p>
+          <div class="card-cta">
+            /products/WA-06.htmlView Product</a>
+            /docs/WA-06.htmlView Documents</a>
+            <atps://wa.me/27716816131?text=Hi%20Wykies%20Automation%2C%20I%27m%20interested%20in%20WA-06WhatsApp</a>
+            <a class="btn btn-outline" href="mailto:wykiesautomation@gmail.com?ail</a>
+          </div>
+        </article>
+
+        <!-- WA-07 -->
+        <article class="card">
+          /assets/img/products/wa-07.png?v=1
+          <h3 class="card-title">WA‑07</h3>
+          <p class="card-price">R1 800 <span class="vat">(VAT‑incl.)</span></p>
+          <div class="card-cta">
+            /products/WA-07.htmlView Product</a>
+            /docs/WA-07.htmlView Documents</a>
+            <a class="btn btn-wa" href="https://wa.me/%20Automation%2C%20I%27m%20interested%20in%20WA-07WhatsApp</a>
+            mailto:wykiesautomation@gmail.com?subject=Enquiry%20about%20WA-07Email</a>
+          </div>
+        </article>
+
+        <!-- WA-08 -->
+        <article class="card">
+          /assets/img/products/wa-08.png?v=1
+          <h3 class="card-title">WA‑08</h3>
+          <p class="card-price">R999 <span class="vat">(VAT‑incl.)</span></p>
+          <div class="card-cta">
+            /products/WA-08.htmlView Product</a>
+            /docs/WA-08.htmlView Documents</a>
+            <a class="btn btn-wa" href="https://wa.me/27716816131?text=20I%27m%20interested%20in%20WA-08WhatsApp</a>
+            mailto:wykiesautomation@gmail.com?subject=Enquiry%20about%20WA-08Email</a>
+          </div>
+        </article>
+
+        <!-- WA-09 -->
+        <article class="card">
+          /assets/img/products/wa-09.png?v=1
+          <h3 class="card-title">WA‑09</h3>
+          <p class="card-price">R1 009 <span class="vat">(VAT‑incl.)</span></p>
+          <div class="card-cta">
+            /products/WA-09.htmlView Product</a>
+            <a class="btn btn-outline" href="/docs/WA-09   https://wa.me/27716816131?text=Hi%20Wykies%20Automation%2C%20I%27m%20interested%20in%20WA-09WhatsApp</a>
+            mailto:wykiesautomation@gmail.com?subject=Enquiry%20about%20WA-09Email</a>
+          </div>
+        </article>
+
+        <!-- WA-10 -->
+        <article class="card">
+          /assets/img/products/wa-10.png?v=1
+          <h3 class="card-title">WA‑10</h3>
+          <p class="card-price">R1 299 <span class="vat">(VAT‑incl.)</span></p>
+          <div class="card-cta">
+            /products/WA-10.htmlView Product</a>
+            /docs/WA-10.htmlView Documents</a>
+            https://wa.me/27716816131?text=Hi%20Wykies%20Automation%2C%20I%27m%20interested%20in%20WA-10WhatsApp</a>
+            mailto:wykiesautomation@gmail.com?subject=Enquiry%20about%20WA-10Email</a>
+          </div>
+        </article>
+
+        <!-- WA-11 -->
+        <article class="card">
+          /assets/img/products/wa-11.png?v=1
+          <h3 class="card-title">WA‑11</h3>
+          <p class="card-price">R5 499 <span class="vat">(VAT‑incl.)</span></p>
+          <div class="card-cta">
+            /products/WA-11.htmlView Product</a>
+            /docs/WA-11.htmlView Documents</a>
+            https://wa.me/27716816131?text=Hi%20Wykies%20Automation%2C%20I%27m%20interested%20in%20WA-11WhatsApp</a>
+            <a class="btn btn-outline" href="mailto:wykiesautomation@gmail.com?subject=Enquiry%20</div>
+        </article>
+
+        <!-- WA-12 -->
+        <article class="card">
+          /assets/img/products/wa-12.png?v=1
+          <h3 class="card-title">WA‑12</h3>
+          <p class="card-price">TBD <span class="vat">(VAT‑incl.)</span></p>
+          <div class="card-cta">
+            /products/WA-12.htmlView Product</a>
+            <aocs/WA-12.htmlView Documents</a>
+            <a class="btn btn-wa" href="https://wa.me/27716816131?text=Hi%20Wykies%20Automation%2C%20I%27m%20interested%20in%20WA-12"to:wykiesautomation@gmail.com?subject=Enquiry%20about%20WA-12Email</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- END: 12 Products Grid -->
   </main>
+
   <footer class="site-footer">© 2025 Wykies Automation</footer>
-  <script src="assets/js/app.js"></script>
+  assets/js/app.js</script>
 </body>
 </html>
