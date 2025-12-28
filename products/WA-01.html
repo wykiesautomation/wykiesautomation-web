@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WA-01 — 3D Printer Control V1</title>
+  <link rel="stylesheet" href="/assets/css/admin.css" />
+</head>
+<body class="page">
+  <section class="tab-panel">
+    <h1>WA-01 — 3D Printer Control V1</h1>
+    <p>Desktop control UI</p>
+    <p><strong>Price:</strong> R1,499.00</p>
+    <div class="controls" style="margin-top:10px;">
+      <a class="btn outline" href="https://drive.google.com/drive/folders/1s1K3xz57PqELaX9q2UIlH0eepArA-4aa?usp=sharing" target="_blank" rel="noopener">Download Trial</a>
+      <a class="btn outline" href="https://drive.google.com/drive/folders/1DyWdZZqZAQdJFZp98ZGATOQTCf-4gvwY?usp=sharing" target="_blank" rel="noopener">View Documents</a>
+      <button class="btn" data-open="contactModal" data-sku="WA-01">Leave Info</button>
+      <a class="btn" href="mailto:wykiesautomation@gmail.com?subject=WA-01%20Enquiry">Contact</a>
+    </div>
+    <div style="margin-top:16px;">
+      <form action="https://www.payfast.co.za/eng/process" method="post">
+        <input type="hidden" name="merchant_id" value="32913011">
+        <input type="hidden" name="merchant_key" value="8wd7iwcgippud">
+        <input type="hidden" name="return_url" value="https://wykiesautomation.co.za/thanks">
+        <input type="hidden" name="cancel_url" value="https://wykiesautomation.co.za/cancelled">
+        <input type="hidden" name="notify_url" value="https://wykiesautomation.co.za/payfast/itn">
+        <input type="hidden" name="amount" value="1499.00">
+        <input type="hidden" name="item_name" value="WA-01 — 3D Printer Control V1">
+        <input type="hidden" name="item_description" value="Desktop control UI">
+        <input type="hidden" name="custom_str1" value="WA-01">
+        <input type="hidden" name="passphrase" value="Ford@20132016">
+        <button class="btn primary" type="submit">Buy Now — R1,499.00</button>
+      </form>
+    </div>
+  </section>
+  <!-- Contact / Leave Info Modal -->
+<div id="contactModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
+  <div class="modal-card">
+    <header class="modal-head">
+      <h3 id="contactTitle">Leave your details</h3>
+      <button class="btn small link" data-close aria-label="Close">✕</button>
+    </header>
+    <form id="contactForm" class="form-grid">
+      <input type="hidden" id="cfSku" name="sku" value="">
+      <label><span class="sr-only">Name</span><input id="cfName" name="name" type="text" placeholder="Your name" required /></label>
+      <label><span class="sr-only">Email</span><input id="cfEmail" name="email" type="email" placeholder="Your email" required /></label>
+      <label><span class="sr-only">Phone</span><input id="cfPhone" name="phone" type="tel" placeholder="Your phone (optional)" /></label>
+      <label class="span-2"><span class="sr-only">Message</span><textarea id="cfMsg" name="message" rows="4" placeholder="Tell us what you need…" required></textarea></label>
+      <div class="modal-actions">
+        <button type="submit" class="btn primary">Send</button>
+        <a id="cfWhatsApp" class="btn outline" href="#" rel="noopener" aria-label="Open WhatsApp with your message">WhatsApp</a>
+        <button type="button" class="btn outline" data-close>Cancel</button>
+      </div>
+    </form>
+    <div class="modal-note muted">We’ll email you from <strong>wykiesautomation@gmail.com</strong>.</div>
+  </div>
+</div>
+  <link rel="stylesheet" href="/assets/css/modal.css" />
+  <script src="/assets/js/contactModal.js" defer></script>
+</body>
+</html>
