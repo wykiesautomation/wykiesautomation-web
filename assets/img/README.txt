@@ -1,1 +1,0 @@
-Place your real logo file here as "logo-blue.png" (original blue logo). Recommended height in UI: 36px.
