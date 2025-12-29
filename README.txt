@@ -1,0 +1,1 @@
+Public site — deploy to wykiesautomation-site repo. Notify URL must be set to your Apps Script Web App URL.

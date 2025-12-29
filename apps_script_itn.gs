@@ -1,0 +1,1 @@
+// Apps Script ITN handler — paste into Apps Script and deploy
