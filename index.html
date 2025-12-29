@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Wykies Automation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+  <meta name="description" content="Modern automation products with VAT-inclusive pricing and secure PayFast checkout."/>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="logo">WA</div><div>Wykies Automation</div></div>
+  <nav class="nav">
+    <a href="#" class="active" data-page="home">Home</a>
+    <a href="#" data-page="products">Products</a>
+    <a href="#" data-page="documents">Documents</a>
+    <a href="#" data-page="contact">Contact</a>
+  </nav>
+</header>
+<section class="hero">
+  <div class="wrap">
+    <h1>Modern automation products with simple, secure checkout</h1>
+    <p>VAT-inclusive pricing, PayFast payments, and a transparent price log.</p>
+    <div class="cta">
+      <button id="btnDownload" class="btn light">Download Trial</button>
+      <button id="btnDocs" class="btn ghost">View Docs</button>
+      <a class="btn ghost" id="btnWhatsApp" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+<main class="wrap">
+  <section id="home" class="page">
+    <div class="section-title"><h2>Featured Products</h2><span class="muted">VAT included</span></div>
+    <div id="products-grid" class="grid"></div>
+    <div class="card mt">
+      <div class="section-title"><h3>Recent Price Changes</h3><span class="muted">Always visible</span></div>
+      <table class="table"><thead><tr><th>Product</th><th>Old → New</th><th>Changed</th><th>Note</th></tr></thead><tbody id="price-log"></tbody></table>
+    </div>
+  </section>
+  <section id="products" class="page hidden">
+    <div class="section-title"><h2>All Products</h2><input id="search" class="input" placeholder="Search by name or id"/></div>
+    <div id="products-grid-full" class="grid"></div>
+  </section>
+  <section id="documents" class="page hidden">
+    <div class="section-title"><h2>Documents & Downloads</h2><span class="muted">Datasheets and manuals</span></div>
+    <div id="docs-grid" class="grid"></div>
+  </section>
+  <section id="contact" class="page hidden">
+    <div class="section-title"><h2>Contact</h2><span class="muted">We reply via email and WhatsApp</span></div>
+    <div class="card">
+      <form id="contactForm">
+        <div class="row"><input class="input" id="cName" placeholder="Your name" required/></div>
+        <div class="row"><input class="input" id="cEmail" type="email" placeholder="Your email" required/></div>
+        <div class="row"><textarea class="input" id="cMsg" rows="4" placeholder="How can we help?" required></textarea></div>
+        <div class="row"><button class="btn" type="submit">Send</button><a id="waLink" class="btn" target="_blank" rel="noopener">WhatsApp us</a></div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap between">
+    <div class="links">
+      <a href="#" onclick="alert('Privacy Policy coming soon')">Privacy</a>
+      <a href="#" onclick="alert('Terms coming soon')">Terms</a>
+      <a href="#" onclick="alert('Refunds Policy coming soon')">Refunds</a>
+    </div>
+    <div class="muted" id="contactLine"></div>
+  </div>
+</footer>
+<div id="modal" class="backdrop hidden"><div class="modal"><div id="modalInner"></div></div></div>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>
