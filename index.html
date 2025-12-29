@@ -1,34 +1,113 @@
 
-<section id="workspace" class="section workspace">
-  <h2>Customer Workspace</h2>
-  <div class="grid two">
-    <article class="card">
-      <h3>Ask About a Product</h3>
-      <form id="askForm" class="form" autocomplete="on">
-        <label>Name<input name="name" required></label>
-        <label>Email<input name="email" type="email" required></label>
-        <label>Phone<input name="phone" pattern="[0-9+\- ]{7,}" placeholder="+27 ..."></label>
-        <label>Product<select name="sku" id="askSku" required><option value="">Loading…</option></select></label>
-        <label>Your Question<textarea name="message" rows="4" required></textarea></label>
-        <input type="text" name="company" class="hp" aria-hidden="true" tabindex="-1" autocomplete="off">
-        <button type="submit" class="btn btn-primary">Send Enquiry</button>
-        <p id="askMsg" class="msg" role="alert" aria-live="polite"></p>
-      </form>
-    </article>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Wykies Automation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data:;
+                 style-src 'self' 'unsafe-inline';
+                 script-src 'self';
+                 base-uri 'none'; frame-ancestors 'none'; upgrade-insecure-requests">
+  /styles.css
+</head>
+<body>
+        <button id="cta-contact"class="btn">Contact</button>  <!-- Top nav (optional) -->
+        <button id="cta-whatsapp" class="btn green">WhatsApp</button>
+      </div>
+    </div>
+  </section>
 
-    <article class="card">
-      <h3>Request a Quote</h3>
-      <form id="quoteForm" class="form" autocomplete="on">
-        <label>Name<input name="name" required></label>
-        <label>Email<input name="email" type="email" required></label>
-        <label>Phone<input name="phone" pattern="[0-9+\- ]{7,}" placeholder="+27 ..."></label>
-        <label>Product<select name="sku" id="quoteSku" required><option value="">Loading…</option></select></label>
-        <label>Quantity<input name="qty" type="number" min="1" step="1" value="1" required></label>
-        <label>Notes<textarea name="message" rows="3"></textarea></label>
-        <input type="text" name="fax" class="hp" aria-hidden="true" tabindex="-1" autocomplete="off">
-        <button type="submit" class="btn btn-primary">Request Quote</button>
-        <p id="quoteMsg" class="msg" role="alert" aria-live="polite"></p>
-      </form>
-    </article>
-  </div>
-</section>
+  <!-- Search + products -->
+  <main>
+    <section id="products" class="section">
+      <header class="section-head">
+        <h2>Products</h2>
+        <input id="product-search" class="input" placeholder="Search products by name, summary, or SKU…">
+      </header>
+      <div id="product-grid" class="cards"></div>
+    </section>
+
+    <!-- Why cards -->
+    <section id="features" class="section">
+      <h2>Why Wykies</h2>
+      <div class="cards three">
+        <article class="card"><h3>Smart Control</h3><p class="muted">ESP32, GSM & Wi‑Fi integrations built in.</p></article>
+        <article class="card"><h3>Secure Payments</h3><p class="muted">PayFast checkout with verified ITN & invoicing.</p></article>
+        <article class="card"><h3>Local Support</h3><p class="muted">Fast responses via email & WhatsApp.</p></article>
+      </div>
+    </section>
+
+    <!-- Workspace -->
+    <section id="workspace" class="section">
+      <h2>Customer Workspace</h2>
+      <div class="grid two">
+        <article class="card">
+          <h3>Ask About a Product</h3>
+          <form id="askForm" class="form" autocomplete="on">
+            <label>Name<input name="name" required></label>
+            <label>Email<input name="email" type="email" required></label>
+            <label>Phone<input name="phone" pattern="[0-9+\- ]{7,}" placeholder="+27 ..."></label>
+            <label>Product<select name="sku" id="askSku" required><option value="">Loading…</option></select></label>
+            <label>Your Question<textarea name="message" rows="4" required></textarea></label>
+            <input type="text" name="company" class="hp" aria-hidden="true" tabindex="-1" autocomplete="off">
+            <button type="submit" class="btn primary">Send Enquiry</button>
+            <p id="askMsg" class="msg" role="alert" aria-live="polite"></p>
+          </form>
+        </article>
+
+        <article class="card">
+          <h3>Request a Quote</h3>
+          <form id="quoteForm" class="form" autocomplete="on">
+            <label>Name<input name="name" required></label>
+            <label>Email<input name="email" type="email" required></label>
+            <label>Phone<input name="phone" pattern="[0-9+\- ]{7,}" placeholder="+27 ..."></label>
+            <label>Product<select name="sku" id="quoteSku" required><option value="">Loading…</option></select></label>
+            <label>Quantity<input name="qty" type="number" min="1" step="1" value="1" required></label>
+            <label>Notes<textarea name="message" rows="3"></textarea></label>
+            <input type="text" name="fax" class="hp" aria-hidden="true" tabindex="-1" autocomplete="off">
+            <button type="submit" class="btn primary">Request Quote</button>
+            <p id="quoteMsg" class="msg" role="alert" aria-live="polite"></p>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <div id="gallery-preview" class="gallery"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <nav class="legal">
+      <aivacy.htmlPrivacy</a>
+      terms.htmlTerms</a>
+      refunds.htmlRefunds</a>
+    </nav>
+    <div class="muted tiny">© 2025 Wykies Automation</div>
+  </footer>
+
+  <app.js</script>
+</body>
+</html>
+  <header class="topnav">
+    <div class="brand">Wykies Automation</div>
+    <nav>
+      #galleryGallery</a>
+      #productsProducts</a>
+      #workspaceContact</a>
+      https://wa.me/27716816131WhatsApp</a>
+    </nav>
+  </header>
+
+  <!-- Light hero -->
+  <section class="hero light">
+    <div class="hero-inner">
+      <h1>Smart Control Systems for Makers & Installers</h1>
+      <p class="muted">Modern GUIs, hardware integration, and streamlined payments — built in South Africa.</p>
+      <div class="cta">
+        <button id="cta-trial"  class="btn primary">Download Trial</button>
+        <button id="cta-docs"   class="btn">View Docs</button>
