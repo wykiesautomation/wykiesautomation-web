@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout – Wykies Automation</title>
+  <link href="./style.css" rel="stylesheet" />
+</head>
+<body>
+  <main class="products" style="max-width:840px;">
+    <h2>Checkout</h2>
+    <form id="pf" method="post" action="https://www.payfast.co.za/eng/process" class="card">
+      <div id="summary"></div>
+      <label>Promo Code <input name="promo" id="promo" /></label>
+      <div style="margin-top:12px;">
+        <button class="btn primary" type="submit">Pay with PayFast</button>
+      </div>
+      <!-- Hidden PayFast fields populated by JS -->
+      <input type="hidden" name="merchant_id" id="merchant_id" />
+      <input type="hidden" name="item_name" id="item_name" />
+      <input type="hidden" name="amount" id="amount" />
+      <input type="hidden" name="return_url" id="return_url" />
+      <input type="hidden" name="cancel_url" id="cancel_url" />
+      <input type="hidden" name="notify_url" id="notify_url" />
+      <input type="hidden" name="custom_str1" id="custom_str1" />
+    </form>
+  </main>
+  <script src="./checkout.js"></script>
+</body>
+</html>
