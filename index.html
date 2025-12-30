@@ -1,104 +1,159 @@
+
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Wykies Automation</title><link rel="stylesheet" href="assets/css/styles.css"></head><body>
-  <div class="header"><div class="brand"><img class="logo" src="assets/img/logo-blue.png" alt="Wykies Automation logo"><h1>Wykies Automation</h1></div><p>Modern control systems, ready to use.</p><div class="hero-cta"><a class="btn btn-whatsapp" href="https://wa.me/27716816131?text=Hi%20Wykies%20Automation%2C%20I%E2%80%99m%20interested%20in%20your%20products.">WhatsApp</a><a class="btn btn-secondary" href="#products">View Products</a><a class="btn btn-secondary" href="mailto:wykiesautomation@gmail.com">Email Us</a></div></div><nav><a href="index.html">Home</a><a href="gallery.html">Gallery</a></nav><div class="container">
-<h2 id="products">Products</h2><section class="grid">
-<article class="card">
-  <img src="assets/img/wa-01.png" alt="3D Printer Control V1">
-  <h3>3D Printer Control V1</h3>
-  <div class="price">R1,499</div>
-  <p>Starter control for printers</p>
-  <div><a class="btn btn-primary" href="product_WA-01.html">View</a></div>
-</article>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wykies Automation</title>
+  <!-- Uses your existing theme -->
+  <link rel="stylesheet" href="assets>
+  <!-- HERO -->
+  <div class="header">
+    <div class="brand">
+      <img class="logo" src="assets/img/logo-blue.png" alt="Wykies Automation logoModern control systems, ready to use.</p>
+    <div class="hero-cta">
+      <a class="btn btn-whatsapp" href="https://wa.me/27716816131?text=Hi%20Wykies%20Automation%2C%20I%E2%80%99m%20interApp</a>
+      <a class="btn btn-secondary" href="#productstn btn-secondary" href="mailto:wykiesautomation@gmail>
 
-<article class="card">
-  <img src="assets/img/wa-02.png" alt="Plasma Cutter Control V1">
-  <h3>Plasma Cutter Control V1</h3>
-  <div class="price">R2,499</div>
-  <p>CNC plasma controller</p>
-  <div><a class="btn btn-primary" href="product_WA-02.html">View</a></div>
-</article>
+  <!-- REQUEST PANEL (below hero) -->
+  <section class="container request-panel">
+    <div class="request-header">
+      <h2>Service / Product Request</h2>
+      <p class="muted">
+        Tell us what you’re looking for. We’ll confirm details, share pricing, and next steps.
+      </p>
+    </div>
 
-<article class="card">
-  <img src="assets/img/wa-03.png" alt="ECU/TCU Control System V1">
-  <h3>ECU/TCU Control System V1</h3>
-  <div class="price">R6,499</div>
-  <p>Engine & gearbox control</p>
-  <div><a class="btn btn-primary" href="product_WA-03.html">View</a></div>
-</article>
+    <form id="requestForm" class="request-grid" novalidate>
+      <!-- Row 1 -->
+      <div class="form-field">
+        <label for="fullName">Full Name</label>
+        <input id="fullName" name="fullName" type="text" placeholder="Your name" required>
+      </div>
+      <div class="form-field">
+        <label for="phone">Phone (WhatsApp)</label>
+        <input id="phone" name="phone" type="tel" placeholder="e.g. 071 681 6131" required>
+      </div>
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com">
+      </div>
 
-<article class="card">
-  <img src="assets/img/wa-04.png" alt="Fridge/Freezer Control V1">
-  <h3>Fridge/Freezer Control V1</h3>
-  <div class="price">R899</div>
-  <p>Temp controller</p>
-  <div><a class="btn btn-primary" href="product_WA-04.html">View</a></div>
-</article>
+      <!-- Row 2 -->
+      <div class="form-field">
+        <label for="product">Product</label>
+        <select id="product" name="product" required>
+          <option value="">Select a product…</option>
+          <option>3D Printer Control V1</option>
+          <option>Plasma Cutter Control V1</option>
+          <option>ECU/TCU Control System V1</option>
+          <option>Fridge/Freezer Control V1</option>
+          <option>Nano GSM Gate Controller V1</option>
+          <option>Solar Energy Management System V1</option>
+          <option>Hybrid Gate Controller V1</option>
+          <option>Smart Battery Charger V1</option>
+          <option>Gate/Garage Controller V1</option>
+          <option>12CH Hybrid Alarm V1</option>
+          <option>16CH Hybrid Alarm V1</option>
+          <option>TCU Gearbox Controller V1</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="interest">Interest / Service</label>
+        <select id="interest" name="interest" required>
+          <option value="">Select…</option>
+          <option value="Buy">Buy</option>
+          <option value="Quote">Quote</option>
+          <option value="Support">Support</option>
+          <option value="Custom">Custom build</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="preferred">Preferred Date & Time</label>
+        <input id="preferred" name="preferred" type="datetime-local">
+      </div>
 
-<article class="card">
-  <img src="assets/img/wa-05.png" alt="Nano GSM Gate Controller V1">
-  <h3>Nano GSM Gate Controller V1</h3>
-  <div class="price">R800</div>
-  <p>Nano GSM gate unit</p>
-  <div><a class="btn btn-primary" href="product_WA-05.html">View</a></div>
-</article>
+      <!-- Row 3 -->
+      <div class="form-field form-notes">
+        <label for="notes">Notes</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="Anything we should know?"></textarea>
+      </div>
 
-<article class="card">
-  <img src="assets/img/wa-06.png" alt="Solar Energy Management System V1">
-  <h3>Solar Energy Management System V1</h3>
-  <div class="price">R3,999</div>
-  <p>Solar EMS</p>
-  <div><a class="btn btn-primary" href="product_WA-06.html">View</a></div>
-</article>
+      <!-- Actions -->
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Request Quote</button>
+        <a class="btn btn-whatsapp" id="waQuick" href="https://wa.me/27716816131" target="_blank" rel="noopenerll contact you to confirm details.</span>
+      </div>
 
-<article class="card">
-  <img src="assets/img/wa-07.png" alt="Hybrid Gate Controller V1">
-  <h3>Hybrid Gate Controller V1</h3>
-  <div class="price">R1,800</div>
-  <p>Hybrid Wi‑Fi/GSM gate</p>
-  <div><a class="btn btn-primary" href="product_WA-07.html">View</a></div>
-</article>
+      <!-- Inline status messages -->
+      <p id="formStatus" class="form-status muted" aria-live="polite"></p>
+    </form>
+  </section>
 
-<article class="card">
-  <img src="assets/img/wa-08.png" alt="Smart Battery Charger V1">
-  <h3>Smart Battery Charger V1</h3>
-  <div class="price">R999</div>
-  <p>Smart charger</p>
-  <div><a class="btn btn-primary" href="product_WA-08.html">View</a></div>
-</article>
+  <!-- NAV -->
+  <nav>
+    <ndex.htmlHome</a>
+    gallery.htmlGallery</a>
+  </nav>
 
-<article class="card">
-  <img src="assets/img/wa-09.png" alt="Gate/Garage Controller V1">
-  <h3>Gate/Garage Controller V1</h3>
-  <div class="price">R1,009</div>
-  <p>Gate/garage controller</p>
-  <div><a class="btn btn-primary" href="product_WA-09.html">View</a></div>
-</article>
+  <!-- PRODUCTS -->
+  <div class="container">
+    <h2 id="products">Products</h2>
+    <section class="grid">
+      <article class="card">
+        assets/img/wa-01.png
+        <h3>3D Printer Control V1</h3>
+        <div class="price">R1,499</div>
+        <p>Starter control for printers</p>
+        <div>product_WA-01.htmlView</a></div>
+      </article>
 
-<article class="card">
-  <img src="assets/img/wa-10.png" alt="12CH Hybrid Alarm V1">
-  <h3>12CH Hybrid Alarm V1</h3>
-  <div class="price">R1,299</div>
-  <p>12-channel hybrid alarm</p>
-  <div><a class="btn btn-primary" href="product_WA-10.html">View</a></div>
-</article>
+      <article class="card">
+        <img src="assets/img/wa-02.png" altasma Cutter Control V1</h3>
+        <div class="price">R2,499</div>
+        <p>CNC plasma controller</p>
+        <div><a class="btn btn-primary" href="product_Wrticle>
 
-<article class="card">
-  <img src="assets/img/wa-11.png" alt="16CH Hybrid Alarm V1">
-  <h3>16CH Hybrid Alarm V1</h3>
-  <div class="price">R5,499</div>
-  <p>16-channel hybrid alarm</p>
-  <div><a class="btn btn-primary" href="product_WA-11.html">View</a></div>
-</article>
+      <article class="card">
+        assets/img/wa-03.png
+        <h3>ECU/TCU Control System V1</h3>
+        <div class="price">R6,499</div>
+        <p>Engine &amp; gearbox control</p>
+        <div><a class="btn btn-primary></div>
+      </article>
 
-<article class="card">
-  <img src="assets/img/wa-12.png" alt="TCU Gearbox Controller V1">
-  <h3>TCU Gearbox Controller V1</h3>
-  <div class="price">R4,500</div>
-  <p>Gearbox controller</p>
-  <div><a class="btn btn-primary" href="product_WA-12.html">View</a></div>
-</article>
-</section>
-  </div>
-  <div class="wa-fab"><a class="btn btn-whatsapp" href="https://wa.me/27716816131?text=Hi%20Wykies%20Automation%2C%20I%E2%80%99m%20interested%20in%20your%20products.">WhatsApp</a></div>
-  <footer>© 2025 Wykies Automation — All rights reserved. • Contact: wykiesautomation@gmail.com</footer>
-</body></html>
+      <article class="card">
+        <img src="assets/img/wa-04.png" alt="Fridge/Freezer Control V1>
+        <div class="price">R899</div>
+        <p>Temp controller</p>
+        <div><a class="btn btn-primary" href="product_Wrticle>
+
+      <article class="card">
+        <img src="assets/img/wa-05.png" alt="Nano GSM Gatetroller V1</h3>
+        <div class="price">R800</div>
+        <p>Nano GSM gate unit</p>
+        <div>product_WA-05.htmlView</a></div>
+      </article>
+
+      <article class="card">
+        assets/img/wa-06.png
+        <h3>Solar Energy Management System V1</h3>
+        <div class="price">R3,999</div>
+        <p>Solar EMS</p>
+        <div><a class="btn btn-primary" href="product_WA-06le>
+
+      <article class="card">
+        <img src="assets/img/wa-07.png" alt="Hybride Controller V1</h3>
+        <div class="price">R1,800</div>
+        <p>Hybrid Wi‑Fi/GSM gate</p>
+        <div><a class="btn btn-primary"</div>
+      </article>
+
+      <article class="card">
+        <img srcmg/wa-08.png
+        <h3>Smart Battery Charger V1</h3>
+        <div class="price">R999</div>
+        <p>Smart charger</p>
+        <div><a class="btn btn-primary" href="product_WA-08.html      <article class="card">
+        <img src="assets/img/wa-09   <h3>Gate/Garage Controller V1</h3>
+        <div class="price">R1,009</div>
