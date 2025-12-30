@@ -1,0 +1,1 @@
+Public site (offline-safe). Open index.html or host on a server. Configure Apps Script in config.json when ready.
