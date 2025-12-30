@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Wykies Automation — Modern automation products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css"/>
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="./">
+    <img class="brand-logo" src="./assets/img/logo-blue.png" alt="Wykies Automation logo" onerror="this.style.display='none'"/>
+    <span class="brand-text">Wykies <strong>Automation</strong></span>
+  </a>
+  <nav id="nav">
+    <a href="#products">Products</a>
+    <a href="#price-log">Price Log</a>
+    <a href="./docs/">Documents</a>
+    <a href="#contact">Contact</a>
+    <a href="./legal/privacy.html">Privacy</a>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+</header>
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Modern automation products with simple, secure checkout</h1>
+    <p>VAT-inclusive pricing, PayFast payments, and a transparent price log. Talk to us on WhatsApp.</p>
+    <div class="cta">
+      <a class="btn primary" href="#products">View Products</a>
+      <a class="btn outline" href="./docs/">View Docs</a>
+      <a class="btn whats" href="https://wa.me/27716816131?text=Hi%20Wykies%20Automation%2C%20I%20have%20a%20question." target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+<main class="container">
+  <section class="search"><input id="search" type="search" placeholder="Search products by name, summary, or SKU…" aria-label="Search products"/></section>
+  <section id="products" class="products">
+    <h2>Featured Products</h2>
+    <p class="muted">Prices shown are VAT-inclusive</p>
+    <div id="product-grid" class="grid"></div>
+    <div class="center"><a class="btn small" href="./products.html">Browse all products</a></div>
+  </section>
+  <section id="price-log" class="price-log">
+    <h2>Recent Price Changes</h2>
+    <p class="muted">Always visible to the public</p>
+    <table id="price-log-table"><thead><tr><th>Product</th><th>Old → New</th><th>Changed At</th><th>Note</th></tr></thead><tbody></tbody></table>
+  </section>
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div id="gallery-grid" class="grid gallery-grid"></div>
+    <div class="center"><a class="btn small" href="./gallery/">Open Gallery</a></div>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>We’ll email you back and can reply via WhatsApp if requested.</p>
+    <form id="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbwHuhjZ7YP7XMfJVrPlaBimM8dOweFtb6dCOe8QUOZlYAllepuSuJU7F52kzd20eMJZgQ/exec">
+      <div class="grid form-grid">
+        <label>Full name<input name="name" required/></label>
+        <label>Email<input name="email" type="email" required/></label>
+        <label>WhatsApp (optional)<input name="whatsapp" placeholder="+27 71 681 6131"/></label>
+        <label class="full">Message<textarea name="message" rows="4" required></textarea></label>
+      </div>
+      <button class="btn primary" type="submit">Send</button>
+      <p id="contact-status" class="muted"></p>
+    </form>
+    <p class="muted foot">Email: <a href="mailto:wykiesautomation@gmail.com">wykiesautomation@gmail.com</a> · WhatsApp: +27 71 681 6131</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <nav>
+    <a href="./legal/privacy.html">Privacy</a>
+    <a href="./legal/terms.html">Terms</a>
+    <a href="./legal/refunds.html">Refunds</a>
+  </nav>
+  <small>© 2025 Wykies Automation</small>
+</footer>
+<script src="./assets/js/app.js" defer></script>
+</body></html>
