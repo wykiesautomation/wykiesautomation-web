@@ -1,0 +1,39 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wykies Automation</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <img src="assets/img/logo-blue.png" alt="Wykies Automation" style="height:56px;" />
+    <h1>Automation products built for reliability</h1>
+    <p>Browse products, download trials, and reach us instantly on WhatsApp.</p>
+    <nav>
+      <a class="btn primary" href="#products">View Products</a>
+      <a class="btn secondary" href="gallery.html">View Gallery</a>
+      <a class="btn secondary" href="https://wa.me/27716816131?text=Hi%20Wykies%20Automation" target="_blank">WhatsApp</a>
+    </nav>
+  </header>
+  <main>
+    <section id="products" class="section">
+      <input id="search" class="search" type="search" placeholder="Search products by name or SKU" />
+      <div id="product-grid" class="grid"></div>
+    </section>
+    <section class="section">
+      <h2>Gallery Preview</h2>
+      <div id="gallery-grid" class="grid"></div>
+    </section>
+    <div class="lightbox" onclick="closeLightbox()"><img alt="preview" /></div>
+  </main>
+  <footer>
+    <a href="legal/privacy.html">Privacy Policy</a> ·
+    <a href="legal/terms.html">Terms</a> ·
+    <a href="legal/refunds.html">Refunds</a>
+  </footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
