@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><title>Product • Wykies Automation</title><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="style.css"/></head>
+<body><header class="site-header"><div class="brand"><a href="index.html"><img src="brand/logo-256w.png" class="logo" alt="Wykies"/></a></div></header>
+<main class="container"><section class="card" id="pd"><h2 id="title">Product</h2><div id="content"></div></section></main>
+<footer class="site-footer"><div class="foot-note"><span>© Wykies Automation</span></div></footer>
+<script type="module">const u=new URLSearchParams(location.search);const id=u.get('id');const $=s=>document.querySelector(s);const r=await fetch('products.json');const items=await r.json();const p=items.find(x=>x.id===id);if(!p){$('#title').textContent='Not found';$('#content').textContent='Invalid product ID';}else{const img=(p.images&&p.images[0])?p.images[0]:'brand/logo-256w.png';$('#title').textContent=`${p.id} — ${p.name}`;$('#content').innerHTML=`<img src='${img}' alt='${p.name}' style='width:420px;height:auto;border-radius:12px'/>
+<p class='muted'>${p.short||''}</p>
+<p class='price'>VAT‑inclusive: R ${Number(p.price_vat_incl).toLocaleString()}</p>
+<div class='actions'><a class='btn brand' href='index.html#products'>Buy</a></div>`;}</script>
+</body></html>
