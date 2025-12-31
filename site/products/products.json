@@ -1,0 +1,235 @@
+[
+  {
+    "id": "WA-01",
+    "sku": "WA-01",
+    "name": "3D Printer GUI",
+    "short": "Modern FDM control with dashboards, job control, sensors and maintenance.",
+    "description_md": "A modern desktop GUI for FDM printers with tabs for **Dashboard**, **Controls**, **File Manager**, **Settings**, **Console**, **Sensors**, **Connection**, **Network**, **Maintenance**, and **Loop**.",
+    "price_vat_incl": 1499,
+    "vat_rate": 0.15,
+    "images": [
+      "public/assets/product/WAP-01.png"
+    ],
+    "status": "active",
+    "tags": [
+      "3D printer",
+      "GUI",
+      "desktop",
+      "maintenance"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-02",
+    "sku": "WA-02",
+    "name": "Plasma Cutter GUI",
+    "short": "THC control, arc voltage graph, safety and emergency stop.",
+    "description_md": "Full **Plasma Cutter** interface featuring **Torch Height Control (THC)** and real‑time **Arc Voltage** graph.",
+    "price_vat_incl": 2499,
+    "vat_rate": 0.15,
+    "images": [
+      "public/assets/product/WAP-02.png"
+    ],
+    "status": "active",
+    "tags": [
+      "plasma",
+      "THC",
+      "industrial",
+      "GUI"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-03",
+    "sku": "WA-03",
+    "name": "ECU/TCU Driver Dashboard",
+    "short": "Live gauges: RPM, gear, speed, temps, AFR, MAP, battery and fuel.",
+    "description_md": "Driver dashboard showing **RPM**, **Gear**, **Speed**, **AFR**, **MAP**, **Battery Voltage**, **Fuel**.",
+    "price_vat_incl": 6499,
+    "vat_rate": 0.15,
+    "images": [
+      "public/assets/product/WAP-03.png"
+    ],
+    "status": "active",
+    "tags": [
+      "automotive",
+      "ECU",
+      "TCU",
+      "gauges"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-04",
+    "sku": "WA-04",
+    "name": "Smart Fridge Controller",
+    "short": "MQTT/Bluetooth connectivity, setpoint control, compressor auto mode.",
+    "description_md": "Refrigeration UI with **MQTT** and **Bluetooth**, **Setpoint** slider, **Compressor Auto**.",
+    "price_vat_incl": 899,
+    "vat_rate": 0.15,
+    "images": [
+      "public/assets/product/WAP-04.png"
+    ],
+    "status": "active",
+    "tags": [
+      "IoT",
+      "MQTT",
+      "Bluetooth",
+      "fridge"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-05",
+    "sku": "WA-05",
+    "name": "GSM Control Panel",
+    "short": "USSD command interface with presets and live network metrics.",
+    "description_md": "GSM console for **USSD** ops: presets, DCS selection, send/reply, signal readouts.",
+    "price_vat_incl": 800,
+    "vat_rate": 0.15,
+    "images": [
+      "public/assets/product/WAP-05.png"
+    ],
+    "status": "active",
+    "tags": [
+      "GSM",
+      "USSD",
+      "admin",
+      "diagnostics"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-06",
+    "sku": "WA-06",
+    "name": "Solar/Inverter Dashboard",
+    "short": "PV, load, grid, battery SoC with trend graphs and controls.",
+    "description_md": "Energy dashboard with **PV**, **Load**, **Grid**, **Battery SoC** and trend graph.",
+    "price_vat_incl": 3999,
+    "vat_rate": 0.15,
+    "images": [
+      "public/assets/product/WAP-06.png"
+    ],
+    "status": "active",
+    "tags": [
+      "solar",
+      "inverter",
+      "energy",
+      "dashboard"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-07",
+    "sku": "WA-07",
+    "name": "Hybrid Gate Controller",
+    "short": "Open/Close/Pedestrian controls, Wi‑Fi/GSM status, safety and limits.",
+    "description_md": "Gate control GUI with **OPEN**, **STOP**, **CLOSE**, **PEDESTRIAN OPEN** and **Wi‑Fi/GSM** status.",
+    "price_vat_incl": 1800,
+    "vat_rate": 0.15,
+    "images": [
+      "public/assets/product/WAP-07.png"
+    ],
+    "status": "active",
+    "tags": [
+      "gate",
+      "hybrid",
+      "Wi‑Fi",
+      "GSM"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-08",
+    "sku": "WA-08",
+    "name": "Smart Battery Charger/Analyzer",
+    "short": "Multi‑phase charging with health, ETA and live metrics.",
+    "description_md": "Charging/analyzer with phases and health/ETA metrics.",
+    "price_vat_incl": 999,
+    "vat_rate": 0.15,
+    "images": [
+      "public/assets/product/WAP-08.png"
+    ],
+    "status": "active",
+    "tags": [
+      "battery",
+      "charger",
+      "analyzer",
+      "diagnostics"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-09",
+    "sku": "WA-09",
+    "name": "Product WA‑09",
+    "short": "Placeholder entry—image will be added once available.",
+    "description_md": "Placeholder for **WA‑09**.",
+    "price_vat_incl": 1009,
+    "vat_rate": 0.15,
+    "images": [],
+    "status": "active",
+    "tags": [
+      "placeholder"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-10",
+    "sku": "WA-10",
+    "name": "Alarm System (Variant A)",
+    "short": "Large ARM/DISARM controls with Wi‑Fi sync and status indicators.",
+    "description_md": "Alarm UI with **ARM HOME**, **ARM AWAY**, **DISARM**, **PANIC**.",
+    "price_vat_incl": 1299,
+    "vat_rate": 0.15,
+    "images": [
+      "public/assets/product/WAP-10.png"
+    ],
+    "status": "active",
+    "tags": [
+      "alarm",
+      "security",
+      "Wi‑Fi"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-11",
+    "sku": "WA-11",
+    "name": "Alarm System (Variant B)",
+    "short": "Dashboard view with signal tiles and PANIC action.",
+    "description_md": "Alarm dashboard with profiles and PANIC.",
+    "price_vat_incl": 5499,
+    "vat_rate": 0.15,
+    "images": [
+      "public/assets/product/WAP-11.png"
+    ],
+    "status": "active",
+    "tags": [
+      "alarm",
+      "security",
+      "profiles"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-12",
+    "sku": "WA-12",
+    "name": "Shifter Bench Controls",
+    "short": "Tabbed bench tool for CAN/CAN‑FD, profiles, safety and sensors.",
+    "description_md": "Bench control UI for shifter testing.",
+    "price_vat_incl": null,
+    "vat_rate": 0.15,
+    "images": [
+      "public/assets/product/WAP-12.png"
+    ],
+    "status": "draft",
+    "tags": [
+      "automotive",
+      "shifter",
+      "bench",
+      "CAN"
+    ],
+    "published": false
+  }
+]
