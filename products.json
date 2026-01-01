@@ -1,0 +1,157 @@
+[
+  {
+    "id": "WA-01",
+    "name": "Hybrid Gate Opener (ESP32)",
+    "short": "Wi‑Fi/Bluetooth gate opener",
+    "price_vat_incl": 1499.0,
+    "vat_rate": 0.15,
+    "images": [
+      "/assets/wa01-main.jpg"
+    ],
+    "status": "in_stock",
+    "tags": [
+      "gate",
+      "esp32"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-02",
+    "name": "GSM Gate Opener (Nano)",
+    "short": "SMS/Call control",
+    "price_vat_incl": 2499.0,
+    "vat_rate": 0.15,
+    "images": [
+      "/assets/wa02-main.jpg"
+    ],
+    "status": "in_stock",
+    "tags": [
+      "gate",
+      "gsm"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-03",
+    "name": "16‑Ch ESP32 Alarm (Standalone)",
+    "short": "ESP32 only",
+    "price_vat_incl": 6499.0,
+    "vat_rate": 0.15,
+    "images": [
+      "/assets/wa03-main.jpg"
+    ],
+    "status": "in_stock",
+    "tags": [
+      "alarm",
+      "esp32"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-04",
+    "name": "Plasma Cutter GUI",
+    "short": "PyQt5 desktop",
+    "price_vat_incl": 899.0,
+    "vat_rate": 0.15,
+    "images": [],
+    "status": "in_stock",
+    "tags": [
+      "gui"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-05",
+    "name": "Van Wyk ECU/TCU GUI (Legacy)",
+    "short": "Serial‑only v13",
+    "price_vat_incl": 800.0,
+    "vat_rate": 0.15,
+    "images": [],
+    "status": "in_stock",
+    "tags": [
+      "ecu",
+      "tcu"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-06",
+    "name": "Van Wyk ECU/TCU GUI (Modern)",
+    "short": "v14.8.3",
+    "price_vat_incl": 3999.0,
+    "vat_rate": 0.15,
+    "images": [],
+    "status": "in_stock",
+    "tags": [
+      "ecu",
+      "tcu"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-07",
+    "name": "Hybrid Universal Gate Opener Board",
+    "short": "ESP32 + H-Bridge",
+    "price_vat_incl": 1800.0,
+    "vat_rate": 0.15,
+    "images": [],
+    "status": "in_stock",
+    "tags": [
+      "gate"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-08",
+    "name": "12‑Ch Hybrid Wi‑Fi+GSM Alarm",
+    "short": "Wi‑Fi primary, GSM fallback",
+    "price_vat_incl": 999.0,
+    "vat_rate": 0.15,
+    "images": [],
+    "status": "in_stock",
+    "tags": [
+      "alarm"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-09",
+    "name": "Shifter DriveBench GUI",
+    "short": "Diagnostics UI",
+    "price_vat_incl": 1009.0,
+    "vat_rate": 0.15,
+    "images": [],
+    "status": "in_stock",
+    "tags": [
+      "gui"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-10",
+    "name": "Android APK (ECU/TCU)",
+    "short": "Touch‑optimized",
+    "price_vat_incl": 1299.0,
+    "vat_rate": 0.15,
+    "images": [],
+    "status": "in_stock",
+    "tags": [
+      "android"
+    ],
+    "published": true
+  },
+  {
+    "id": "WA-11",
+    "name": "GSM Alarm Add‑On",
+    "short": "Panic & RF",
+    "price_vat_incl": 5499.0,
+    "vat_rate": 0.15,
+    "images": [],
+    "status": "in_stock",
+    "tags": [
+      "alarm",
+      "gsm"
+    ],
+    "published": true
+  }
+]
