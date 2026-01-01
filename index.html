@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wykies Automation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Gate openers, alarm systems, and automation kits by Wykies Automation." />
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <img src="assets/logo-blue.webp" alt="Wykies Automation logo" class="logo" />
+    <h1>Wykies Automation</h1>
+    <p class="sub">Modern automation products for gates, garages, and alarms.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#products">View Products</a>
+      <a class="btn" href="docs.html">View Docs</a>
+      <a class="btn whatsapp" id="whatsappBtn" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</header>
+<main>
+  <section id="products" class="section">
+    <h2>Featured Products</h2>
+    <div id="productGrid" class="grid"></div>
+  </section>
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form id="contactForm" class="form">
+      <div class="row">
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+      </div>
+      <div class="row">
+        <label>Phone<input type="tel" name="phone" required></label>
+        <label>Product<select name="product" id="productSelect"><option value="">(optional)</option></select></label>
+      </div>
+      <label>Message<textarea name="message" rows="4" required></textarea></label>
+      <div class="row">
+        <label><input type="checkbox" name="copy"> Email me a copy</label>
+        <label><input type="checkbox" name="whatsapp"> Also contact me on WhatsApp</label>
+      </div>
+      <div class="actions">
+        <button class="btn primary" type="submit">Send</button>
+        <span id="status" class="status"></span>
+      </div>
+      <p class="foot">We’ll email you from wykiesautomation@gmail.com.</p>
+    </form>
+  </section>
+</main>
+<footer class="footer">© wykiesautomation@gmail.com · Built with love in South Africa</footer>
+<script type="module" src="config.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

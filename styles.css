@@ -1,0 +1,26 @@
+
+:root {
+  --brand-blue: #2F76FF;
+  --text: #111827; --muted: #6B7280; --bg: #0F172A; --panel: #111827; --white: #fff;
+}
+* { box-sizing: border-box; }
+body { margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--text); background:#fff; }
+.hero { background: var(--brand-blue); color: var(--white); padding: 4rem 1rem; text-align:center; }
+.hero .logo { width:120px; height:auto; margin-bottom:1rem; image-rendering:-webkit-optimize-contrast; }
+.hero .btn { margin:0 .5rem; }
+.section { padding: 2rem 1rem; max-width: 1100px; margin: 0 auto; }
+.grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:1rem; }
+.card { border: 1px solid #e5e7eb; border-radius: 10px; overflow:hidden; background:#fff; }
+.card img { width:100%; height:180px; object-fit:cover; background:#f3f4f6; }
+.card .body { padding:1rem; }
+.card .price { font-weight:700; color:var(--brand-blue); }
+.btn { display:inline-block; padding:.75rem 1rem; border-radius:8px; border:1px solid #d1d5db; background:#fff; color:#111827; text-decoration:none; font-weight:600; }
+.btn.primary { background:var(--brand-blue); color:#fff; border-color:var(--brand-blue); }
+.btn.whatsapp { background:#25D366; color:#fff; border-color:#25D366; }
+.form .row { display:flex; gap:1rem; }
+.form label { flex:1; display:flex; flex-direction:column; font-size:.9rem; gap:.25rem; }
+.form input, .form select, .form textarea { padding:.6rem .7rem; border:1px solid #e5e7eb; border-radius:8px; font:inherit; }
+.actions { margin-top:1rem; display:flex; align-items:center; gap:.75rem; }
+.status { color:var(--muted); font-size:.9rem; }
+.footer { padding:1rem; text-align:center; color:var(--muted); border-top:1px solid #e5e7eb; }
+@media (max-width: 640px) { .form .row { flex-direction:column; } }
