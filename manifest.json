@@ -1,0 +1,9 @@
+
+{
+  "name": "Wykies Automation",
+  "short_name": "Wykies",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0F141C",
+  "theme_color": "#2F76FF"
+}
