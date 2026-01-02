@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wykies Automation — Smart Gate & Industrial Control</title>
+  <meta name="description" content="Gate/garage controllers, alarm systems, and tooling. VAT-inclusive pricing."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css"/>
+  <script type="application/ld+json">{
+    "@context": "https://schema.org", 
+    "@type": "Organization", 
+    "name": "Wykies Automation",
+    "url": "https://wykiesautomation.co.za",
+    "contactPoint": [{"@type":"ContactPoint","telephone":"+27 71 681 6131","contactType":"customer service"}]
+  }</script>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Automation that just works.</h1>
+      <p class="sub">Smart gate/garage openers, hybrid alarm control, and industrial tooling — built in South Africa. VAT-inclusive pricing.</p>
+      <div class="cta">
+        <a class="btn primary" href="#products">Browse Products</a>
+        <a class="btn" href="./docs/Wykies_Automation_Deployment_Guide_v1.0.docx">View Docs</a>
+        <a class="btn" target="_blank" href="https://wa.me/27716816131?text=Hi%20Wykies%20Automation%20—%20I%27m%20interested%20in%20your%20products.">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="products" class="section">
+      <div class="container">
+        <h2>Products</h2>
+        <div id="productGrid" class="cards"></div>
+      </div>
+    </section>
+
+    <section id="pricelog" class="section alt">
+      <div class="container">
+        <h2>Price Log</h2>
+        <p class="muted">Transparent history of price changes (VAT-inclusive).</p>
+        <table class="grid" id="gridPriceLog">
+          <thead><tr><th>Date</th><th>Product</th><th>Old</th><th>New</th><th>Note</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="documents" class="section">
+      <div class="container">
+        <h2>Documents</h2>
+        <ul>
+          <li><a href="./docs/Wykies_Automation_Deployment_Guide_v1.0.docx">Deployment Guide (DOCX)</a></li>
+          <li><a href="https://drive.google.com/" target="_blank">Admin Dashboard Spec v1.2 (Google Drive)</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 Wykies Automation • Build <span id="buildId"></span></div>
+  </footer>
+
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'>
+  <defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
+    <stop offset='0%' stop-color='#e2e8f0'/>
+    <stop offset='100%' stop-color='#cbd5e1'/>
+  </linearGradient></defs>
+  <rect width='400' height='240' rx='24' fill='url(#g)'/>
+  <text x='200' y='120' dominant-baseline='middle' text-anchor='middle' font-family='Inter,Arial' font-size='24' fill='#64748b'>Product Image</text>
+</svg>
